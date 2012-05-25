@@ -1,0 +1,46 @@
+<?php 
+defined('_JEXEC') or die('Restricted access');
+echo '<div id="phocagallery-ytbupload">';
+echo '<div style="font-size:1px;height:1px;margin:0px;padding:0px;">&nbsp;</div>';
+echo '<form onsubmit="return OnUploadSubmitCategoryPG(\'loading-label-ytb\');" action="'. $this->tmpl['syu_url'] .'" id="phocaGalleryUploadFormYU" method="post">';
+//if ($this->tmpl['ftp']) { echo PhocaGalleryFileUpload::renderFTPaccess();}  
+echo '<fieldset class="actions">'
+	.' <legend>'; 
+echo JText::_('COM_PHOCAGALLERY_YTB_UPLOAD');
+echo ' </legend>';
+
+echo $this->tmpl['syu_output'];
+
+$this->tmpl['upload_form_id'] = 'phocaGalleryUploadFormYU';
+?>
+
+<table>
+	<tr>
+		<td><?php echo JText::_( 'COM_PHOCAGALLERY_YTB_LINK' ); ?>:</td>
+			<td>
+				<input type="text" id="phocagallery-ytbupload-link" name="phocagalleryytbuploadlink" value=""  maxlength="255" size="48" /></td>
+
+		<td>
+		<input type="submit" id="file-upload-submit" value="<?php echo JText::_('COM_PHOCAGALLERY_START_UPLOAD'); ?>"/>
+		</td></tr>
+</table>
+<?php /*
+<input type="hidden" name="controller" value="category" />
+<input type="hidden" name="viewback" value="category" />
+<input type="hidden" name="view" value="category"/>
+<input type="hidden" name="tab" value="<?php echo $this->tmpl['currenttab']['images'];?>" />
+<input type="hidden" name="Itemid" value="<?php echo JRequest::getVar('Itemid', 0, '', 'int') ?>"/>
+<input type="hidden" name="filter_order_image" value="<?php echo $this->listsimage['order']; ?>" />
+<input type="hidden" name="filter_order_Dir_image" value="" />
+<input type="hidden" name="catid" value="<?php echo $this->tmpl['catidimage'] ?>"/> */ ?>
+
+<?php
+if ($this->tmpl['upload_form_id'] == 'phocaGalleryUploadFormYU') {
+	echo '<div id="loading-label-ytb" style="text-align:center">'
+	. JHtml::_('image', 'components/com_phocagallery/assets/images/icon-switch.gif', '') 
+	. '  '.JText::_('COM_PHOCAGALLERY_LOADING').'</div>';
+}
+
+echo '</fieldset>';
+echo '</form>';	 
+echo '</div>';

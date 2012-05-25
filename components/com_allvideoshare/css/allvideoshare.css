@@ -1,0 +1,57 @@
+/*
+ * @version		$Id: allvideoshare.css 1.2.1 2012-05-03 $
+ * @package		Joomla
+ * @copyright   Copyright (C) 2012-2013 MrVinoth
+ * @license     GNU/GPL http://www.gnu.org/licenses/gpl-2.0.html
+*/
+
+div.avs_thumb {
+	float:left;
+	padding:0px;
+	margin:7px 14px 7px 0px;
+}
+div.avs_thumb a {
+	text-decoration:none;
+}
+div.avs_thumb .image {
+	display:block;
+}
+div.avs_thumb .arrow {
+	position:absolute;
+	width:29px;
+	height:26px;
+	margin-left:59px;
+	margin-top:28px;
+	opacity:0.5;
+}
+div.avs_thumb .name, div.avs_thumb .title {
+	margin:5px 0px 0px 0px;
+	padding:0px;
+	display:block;
+	font-family:Arial;
+	font-size:12px;
+	color:#444;
+	font-weight:bold;
+}
+div.avs_thumb .views {
+	margin:0px;
+	padding:0px;
+	display:block;
+	font-family:Arial;
+	font-size:11px;
+	color:#777;
+}
+div.avsmore {
+	clear:both;
+	padding:0px;
+	margin:10px 0px;
+}
+div.avsmore a {
+	font-size:11px;
+	font-weight:bold;
+	text-decoration:none;
+	border:1px solid #CCC;
+	background-color:#E7E7E7;
+	padding:3px 5px;
+	margin:0px;
+}

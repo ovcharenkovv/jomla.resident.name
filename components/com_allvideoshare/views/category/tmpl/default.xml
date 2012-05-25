@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+  <layout title="CATEGORY_LAYOUT">
+    <message>ADD_CATEGORY_LAYOUT</message>
+  </layout>
+  <state>
+    <name>CATEGORY_LAYOUT</name>
+    <description>ADD_CATEGORY_LAYOUT</description>
+    <url addpath="/administrator/components/com_allvideoshare/elements">
+      <param name="slg" type="categories" default="0" label="SELECT_CATEGORY_LABEL" description="SELECT_CATEGORY_DESCRIPTION" />
+      <param name="orderby" type="list" default="default" label="ORDER_BY_LABEL" description="ORDER_BY_DESCRIPTION">
+        <option value="default">DEFAULT</option>
+        <option value="latest">LATEST_VIDEOS</option>
+        <option value="popular">POPULAR_VIDEOS</option>
+        <option value="featured">FEATURED_VIDEOS</option>
+        <option value="random">RANDOM_VIDEOS</option>
+      </param>
+    </url>
+    <params />
+    <fields name="request">
+      <fieldset name="request">
+        <field name="slg" type="sql" default="0" label="SELECT_CATEGORY_LABEL" description="SELECT_CATEGORY_DESCRIPTION"  
+			query="select slug, name from #__allvideoshare_categories where published=1 order by name ASC" key_field="slug" value_field="name" >
+          <option value="0">DISPLAY_ALL_CATEGORIES</option>
+        </field>
+        <field name="orderby" type="list" default="default" label="ORDER_BY_LABEL" description="ORDER_BY_DESCRIPTION">
+          <option value="default">DEFAULT</option>
+          <option value="latest">LATEST_VIDEOS</option>
+          <option value="popular">POPULAR_VIDEOS</option>
+          <option value="featured">FEATURED_VIDEOS</option>
+          <option value="random">RANDOM_VIDEOS</option>
+        </field>
+      </fieldset>
+    </fields>
+  </state>
+</metadata>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5.0" client="site" method="upgrade">
+  <name>All Video Share Gallery</name>
+  <author>MrVinoth</author>
+  <creationDate>May 2012</creationDate>
+  <copyright>Copyright (c) 2012 - 2013 MrVinoth. All rights reserved.</copyright>
+  <authorEmail>admin@mrvinoth.com</authorEmail>
+  <authorUrl>mrvinoth.com</authorUrl>
+  <version>1.2.1</version>
+  <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+  <description>Add AllVideoShare Galleries to your Module Positions.</description>
+  <files>
+    <filename module="mod_allvideosharegallery">mod_allvideosharegallery.php</filename>
+    <filename>index.html</filename>
+    <filename>helper.php</filename>
+    <folder>tmpl</folder>
+  </files>
+  <languages folder="language">
+    <language tag="en-GB">en-GB/en-GB.mod_allvideosharegallery.ini</language>
+  </languages>
+  <params addpath="/administrator/components/com_allvideoshare/elements">
+    <param name="type" type="list" label="GALLERY_TYPE_LABEL" description="GALLERY_TYPE_DESCRIPTION" default="videos" >
+      <option value="categories">CATEGORIES</option>
+      <option value="videos">VIDEOS</option>
+    </param>
+    <param type="spacer" default="GALLERY_TYPE_VIDEOS" />
+    <param name="category" type="categories" default="0" label="SELECT_CATEGORY_LABEL" description="SELECT_CATEGORY_DESCRIPTION" />
+    <param name="orderby" type="list" default="latest" label="ORDER_BY_LABEL" description="ORDER_BY_DESCRIPTION">
+      <option value="default">DEFAULT</option>
+      <option value="latest">LATEST_VIDEOS</option>
+      <option value="popular">POPULAR_VIDEOS</option>
+      <option value="featured">FEATURED_VIDEOS</option>
+      <option value="random">RANDOM_VIDEOS</option>
+    </param>
+    <param name="link"  type="text"  default=""  label="CUSTOM_PLAYER_PAGE_URL_LABEL"  description="CUSTOM_PLAYER_PAGE_URL_DESCRIPTION" size="60" />
+    <param type="spacer" default="GENERAL_CONFIGURATION" />
+    <param name="rows"  type="text"  default="3"  label="NO_OF_ROWS_LABEL"  description="NO_OF_ROWS_DESCRIPTION" />
+    <param name="columns"  type="text"  default="2"  label="NO_OF_COLS_LABEL"  description="NO_OF_COLS_DESCRIPTION" />
+    <param name="thumb_width"  type="text"  default="145"  label="THUMBNAIL_WIDTH_LABEL"  description="THUMBNAIL_WIDTH_DESCRIPTION" />
+    <param name="thumb_height"  type="text"  default="80"  label="THUMBNAIL_HEIGHT_LABEL"  description="THUMBNAIL_HEIGHT_DESCRIPTION" />
+    <param name="more" type="list" default="0" label="MORE_LABEL" description="MORE_DESCRIPTION">
+      <option value="1">Yes</option>
+      <option value="0">No</option>
+    </param>
+    <param name="moduleclass_sfx" type="text" default="" label="MODULE_CLASS_SUFFIX_LABEL" description="MODULE_CLASS_SUFFIX_DESCRIPTION" size="60" />
+  </params>
+  <config>
+    <fields name="params">
+      <fieldset name="basic">
+        <field name="type" type="list" label="GALLERY_TYPE_LABEL" description="GALLERY_TYPE_DESCRIPTION" default="videos" >
+          <option value="categories">CATEGORIES</option>
+          <option value="videos">VIDEOS</option>
+        </field>
+        <field type="spacer" label="GALLERY_TYPE_VIDEOS" />
+        <field name="category" type="sql" default="0" label="SELECT_CATEGORY_LABEL" description="SELECT_CATEGORY_DESCRIPTION"  
+			query="select slug, name from #__allvideoshare_categories where published=1 order by name ASC" key_field="slug" value_field="name" >
+          <option value="0">DISPLAY_ALL_CATEGORIES</option>
+        </field>
+        <field name="orderby" type="list" default="latest" label="ORDER_BY_LABEL" description="ORDER_BY_DESCRIPTION">
+          <option value="default">DEFAULT</option>
+          <option value="latest">LATEST_VIDEOS</option>
+          <option value="popular">POPULAR_VIDEOS</option>
+          <option value="featured">FEATURED_VIDEOS</option>
+          <option value="random">RANDOM_VIDEOS</option>
+        </field>
+        <field name="link"  type="text"  default=""  label="CUSTOM_PLAYER_PAGE_URL_LABEL"  description="CUSTOM_PLAYER_PAGE_URL_DESCRIPTION" size="60" />
+        <field type="spacer" label="GENERAL_CONFIGURATION" />
+        <field name="rows"  type="text"  default="3"  label="NO_OF_ROWS_LABEL"  description="NO_OF_ROWS_DESCRIPTION" />
+        <field name="columns"  type="text"  default="2"  label="NO_OF_COLS_LABEL"  description="NO_OF_COLS_DESCRIPTION" />
+        <field name="thumb_width"  type="text"  default="145"  label="THUMBNAIL_WIDTH_LABEL"  description="THUMBNAIL_WIDTH_DESCRIPTION" />
+        <field name="thumb_height"  type="text"  default="80"  label="THUMBNAIL_HEIGHT_LABEL"  description="THUMBNAIL_HEIGHT_DESCRIPTION" />
+        <field name="more" type="list" default="0" label="MORE_LABEL" description="MORE_DESCRIPTION">
+          <option value="1">Yes</option>
+          <option value="0">No</option>
+        </field>
+        <field name="moduleclass_sfx" type="text" default="" label="MODULE_CLASS_SUFFIX_LABEL" description="MODULE_CLASS_SUFFIX_DESCRIPTION" size="60" />
+      </fieldset>
+    </fields>
+  </config>
+</install>

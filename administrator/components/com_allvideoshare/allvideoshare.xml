@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="component" version="1.5.0" method="upgrade">
+  <name>All Video Share</name>
+  <author>MrVinoth</author>
+  <creationDate>May 2012</creationDate>
+  <copyright>Copyright (c) 2012 - 2013 MrVinoth. All rights reserved.</copyright>
+  <authorEmail>admin@mrvinoth.com</authorEmail>
+  <authorUrl>mrvinoth.com</authorUrl>
+  <version>1.2.1</version>
+  <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+  <description>&lt;div style=&quot;font-size:12px; font-weight:bold; color:#333; padding:5px;&quot;&gt;Thank you for installing All Video Share by MrVinoth. The Complete Video Sharing Solution for your Joomla Websites.&lt;/div&gt;</description>
+  <install>
+    <sql>
+      <file charset="utf8" driver="mysql">install.sql</file>
+      <file driver="mysql">install.mysql4.sql</file>
+      <file charset="utf8" driver="mysqli">install.sql</file>
+      <file driver="mysqli">install.mysql4.sql</file>
+    </sql>
+  </install>
+  <uninstall>
+    <sql>
+      <file charset="utf8" driver="mysql">uninstall.sql</file>
+      <file driver="mysql">uninstall.sql</file>
+      <file charset="utf8" driver="mysqli">uninstall.sql</file>
+      <file driver="mysqli">uninstall.sql</file>
+    </sql>
+  </uninstall>
+  <languages folder="components/language">
+    <language tag="en-GB">en-GB/en-GB.com_allvideoshare.ini</language>
+  </languages>
+  <files folder="components/com_allvideoshare">
+    <folder>assets</folder>
+    <folder>css</folder>
+    <folder>js</folder>
+    <folder>models</folder>
+    <folder>views</folder>
+    <folder>controllers</folder>
+    <filename>index.html</filename>
+    <filename>allvideoshare.php</filename>
+    <filename>router.php</filename>
+    <filename>player.swf</filename>
+  </files>
+  <administration>
+    <menu img="components/com_allvideoshare/assets/allvideoshare.png">COM_ALLVIDEOSHARE</menu>
+    <files folder="administrator/components/com_allvideoshare">
+      <folder>assets</folder>
+      <folder>css</folder>
+      <folder>elements</folder>
+      <folder>tables</folder>
+      <folder>models</folder>
+      <folder>views</folder>
+      <folder>controllers</folder>
+      <filename>allvideoshare.php</filename>
+      <filename>index.html</filename>
+      <filename>install.mysql4.sql</filename>
+      <filename>install.sql</filename>
+      <filename>uninstall.sql</filename>
+    </files>
+    <languages folder="administrator/language">
+      <language tag="en-GB">en-GB/en-GB.com_allvideoshare.ini</language>
+      <language tag="en-GB">en-GB/en-GB.com_allvideoshare.menu.ini</language>
+      <language tag="en-GB">en-GB/en-GB.com_allvideoshare.sys.ini</language>
+    </languages>
+  </administration>
+  <installfile>install.allvideoshare.php</installfile>
+  <uninstallfile>uninstall.allvideoshare.php</uninstallfile>
+  <scriptfile>script.allvideoshare.php</scriptfile>
+</install>

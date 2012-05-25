@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5.0" client="site" method="upgrade">
+  <name>All Video Share Player</name>
+  <author>MrVinoth</author>
+  <creationDate>April 2012</creationDate>
+  <copyright>Copyright (c) 2012 - 2013 MrVinoth. All rights reserved.</copyright>
+  <authorEmail>admin@mrvinoth.com</authorEmail>
+  <authorUrl>mrvinoth.com</authorUrl>
+  <version>1.2</version>
+  <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+  <description>Add Videos to all your Module Positions.</description>
+  <files>
+    <filename module="mod_allvideoshareplayer">mod_allvideoshareplayer.php</filename>
+    <filename>index.html</filename>
+  </files>
+  <languages folder="language">
+    <language tag="en-GB">en-GB/en-GB.mod_allvideoshareplayer.ini</language>
+  </languages>
+  <params addpath="/administrator/components/com_allvideoshare/elements">
+  	<param name="playerid" type="players" default="1" label="SELECT_PLAYER_LABEL" description="SELECT_PLAYER_DESCRIPTION" />  	
+    <param name="videoid" type="videos" default="1" label="SELECT_VIDEO_LABEL" description="SELECT_VIDEO_DESCRIPTION" />
+	<param name="width" type="text" default="" label="WIDTH_LABEL" description="WIDTH_DESCRIPTION" />
+	<param name="height" type="text" default="" label="HEIGHT_LABEL" description="HEIGHT_DESCRIPTION" />
+    <param name="autodetect" type="radio" default="1" label="AUTO_DETECT_VIDEO_LABEL" description="AUTO_DETECT_VIDEO_DESCRIPTION" >
+      <option value="0">No</option>
+      <option value="1">Yes</option>
+    </param>	
+    <param name="moduleclass_sfx" type="text" default="" label="MODULE_CLASS_SUFFIX_LABEL" description="MODULE_CLASS_SUFFIX_DESCRIPTION" size="60" />	
+  </params>
+  <config>
+    <fields name="params">
+      <fieldset name="basic">
+	  	<field name="playerid" type="sql" default="1" label="SELECT_PLAYER_LABEL" description="SELECT_PLAYER_DESCRIPTION"  
+			query="select id, name from #__allvideoshare_players where published=1 order by name ASC" key_field="id" value_field="name" >
+        </field>	  	
+		<field name="videoid" type="sql" default="1" label="SELECT_VIDEO_LABEL" description="SELECT_VIDEO_DESCRIPTION"  
+			query="select id, title from #__allvideoshare_videos where published=1 order by title ASC" key_field="id" value_field="title" >
+        </field>
+		<field name="width" type="text" default="" label="WIDTH_LABEL" description="WIDTH_DESCRIPTION" />
+		<field name="height" type="text" default="" label="HEIGHT_LABEL" description="HEIGHT_DESCRIPTION" />
+        <field name="autodetect" type="list" default="1" label="AUTO_DETECT_VIDEO_LABEL" description="AUTO_DETECT_VIDEO_DESCRIPTION" >
+          <option value="0">No</option>
+          <option value="1">Yes</option>
+        </field>		
+        <field name="moduleclass_sfx" type="text" default="" label="MODULE_CLASS_SUFFIX_LABEL" description="MODULE_CLASS_SUFFIX_DESCRIPTION" size="60" />		
+      </fieldset>
+    </fields>
+  </config>
+</install>

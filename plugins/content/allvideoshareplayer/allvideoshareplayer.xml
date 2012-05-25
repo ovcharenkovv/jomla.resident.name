@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="plugin" group="content" method="upgrade">
+  <name>All Video Share Player</name>
+  <author>MrVinoth</author>
+  <creationDate>May 2012</creationDate>
+  <copyright>Copyright (c) 2012 - 2013 MrVinoth. All rights reserved.</copyright>
+  <authorEmail>admin@mrvinoth.com</authorEmail>
+  <authorUrl>mrvinoth.com</authorUrl>
+  <version>1.2.1</version>
+  <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+  <description>Plugin to add Videos to your article pages.</description>
+  <files>
+    <filename plugin="allvideoshareplayer">allvideoshareplayer.php</filename>
+  </files>
+</install>
