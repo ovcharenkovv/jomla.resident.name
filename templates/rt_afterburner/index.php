@@ -7,9 +7,9 @@ defined('_JEXEC') or die;
 define( 'YOURBASEPATH', dirname(__FILE__) );
 
 $color_style			= $this->params->get("colorStyle", "dark");
-$template_width 		= $this->params->get("templateWidth", "962");
-$leftcolumn_width		= $this->params->get("leftcolumnWidth", "210");
-$rightcolumn_width		= $this->params->get("rightcolumnWidth", "210");
+$template_width 		= $this->params->get("templateWidth", "1420");
+$leftcolumn_width		= $this->params->get("leftcolumnWidth", "317");
+$rightcolumn_width		= $this->params->get("rightcolumnWidth", "0");
 $leftcolumn_color		= $this->params->get("leftcolumnColor", "color2");
 $rightcolumn_color		= $this->params->get("rightcolumnColor", "color1");
 $mootools_enabled       = ($this->params->get("mootools_enabled", 1)  == 0)?"false":"true";

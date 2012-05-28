@@ -9,9 +9,9 @@ h1,.componentheading {font-size:180%;}
 h2,legend {font-size:150%;}
 h3 {font-size:130%;}
 h4 {font-size:110%;}
-a {color:#007EBA;text-decoration:none;font-weight:bold;}
+a {color:#555;text-decoration:none;font-weight:bold;}
 a:hover {text-decoration:underline;}
-ul {margin:1em;}
+ul {margin:2em;}
 p {margin-top:10px;margin-bottom:10px;}
 #main {font-size:1.3em;line-height:140%;}
 .background {position:absolute;width:100%;height:130px;background:url(../images/light.png) 0 -384px repeat-x;}
@@ -40,7 +40,6 @@ p {margin-top:10px;margin-bottom:10px;}
 .x-c-s #colright {float:left;position:relative;right:100%;width:200%;}
 .x-c-s #col1wrap {float:left;left:50%;position:relative;width:50%;}
 .x-c-s #col3 {float:right;position:relative;}
-.s-c-s .ctr-color1, .s-c-s .ckl-color1, .s-c-x .ckl-color1, .x-c-s .cdr-color1 {background:#eee;}
 .s-c-s .ctr-color2, .s-c-s .ckl-color2, .s-c-x .ckl-color2, .x-c-s .cdr-color2 {background:#d1e0e7;}
 .s-c-s #col1pad, .s-c-x #colright, .x-c-s #colright, #wrapper, body {background:#fff;}
 .cols1 {display:block;float:none;margin:0;width:100%;}
@@ -113,9 +112,9 @@ div.breadcrumbs .sep {padding:0 5px;}
 .banneritem_text {margin-bottom:10px;}
 #modlgn_username, #modlgn_passwd {border:1px solid #ccc;padding:3px;}
 .pagination span, .pagination a {margin-right:5px;}
-#colmask ul li {list-style:circle;}
+#colmask ul li {list-style:none;}
 #colmask ul ul {margin-top:0;}
-#colmask ul ul li {list-style:square;}
+#colmask ul ul li {list-style:none;}
 .item-page,
 .category-list {position: relative;}
 #colmask .component-pad .actions {position: absolute;right: 0;top: 0;margin: 0;}
@@ -138,6 +137,7 @@ table.category th a {font-weight: normal;}
 img[align="left"] {float: left;margin-right: 10px;}
 .article-count {padding-bottom: 1em;}
 .article-count dt,
+.article-count dt,
 .article-count dd,
 .contact-address address,
 #form-login-remember label {display: inline;}
@@ -155,10 +155,8 @@ span.attention {display:block;margin:15px 0;padding:8px 10px 8px 10px;background
 
 /* Modules */
 .module {padding:1px;}
-.module-title {font-size:110%;font-weight:bold;margin:0;padding:7px 15px 5px;}
-.module-body {padding:10px 15px 25px;}
-.color1 .module-title {background:url(../images/light.png) 0 -204px repeat-x;border-bottom:1px solid #ddd;color:#777;}
-.color1 .module-body {border-top:1px solid #fff;}
+.module-title {font-size:180%;font-weight:bold;margin:0;padding:7px 15px 5px;}
+.module-body {padding:0px 15px 25px;}
 .color2 .module-title {background:url(../images/light.png) 0 -136px repeat-x;border-bottom:1px solid #c3d9e1;color:#50646d;}
 .color2 .module-body {border-top:1px solid #dfeaef;}
 #colmask .m_menu {background:#cf2700;color:#fff;}
@@ -181,3 +179,9 @@ span.attention {display:block;margin:15px 0;padding:8px 10px 8px 10px;background
 #logo2 {width:165px;height:20px;background:url(../images/light.png) 5px -646px no-repeat;display:block;float:right;margin-left:15px;margin-top:15px;}
 #footer ul {margin:0;}
 #footer li {list-style:none;float:left;padding-right:20px;font-weight:bold;}
+.m_portfolio_menu ul li ul { display: none; }
+.m_portfolio_menu ul li.current ul { display: block; }
+.m_portfolio_menu ul li.active ul { display: block; }
+.m_portfolio_menu a { font: 20px/30px Helvetica; color: #c9c9c9;}
+.m_portfolio_menu ul li ul li a { font: bold 16px/28px Helvetica; color: #666;}
+.m_portfolio_menu ul li ul li ul li a{ font:  12px/24px Helvetica; color: #666;}

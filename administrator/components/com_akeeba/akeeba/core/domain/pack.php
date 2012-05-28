@@ -445,11 +445,11 @@ ENDVCONTENT;
 		// Apply Skipfiles
 		if($filters->isFiltered($dir, $root, 'dir', 'content') ) {
 			AEUtilLogger::WriteLog(_AE_LOG_INFO, "Skipping files of directory ".$this->current_directory);
-			// Try to find and include .htaccess and index.htm(l) files
+			// Try to find and include .htaccess.txt and index.htm(l) files
 			// # Fix 2.4: Do not add DIRECTORY_SEPARATOR if we are on the site's root and it's an empty string
 			$ds = ($this->current_directory == '') || ($this->current_directory == '/') ? '' : DIRECTORY_SEPARATOR;
 			$checkForTheseFiles = array(
-				$this->current_directory.$ds.'.htaccess',
+				$this->current_directory.$ds.'.htaccess.txt',
 				$this->current_directory.$ds.'index.html',
 				$this->current_directory.$ds.'index.htm',
 				$this->current_directory.$ds.'robots.txt'
