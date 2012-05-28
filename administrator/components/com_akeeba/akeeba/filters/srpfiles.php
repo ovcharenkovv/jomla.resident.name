@@ -68,11 +68,11 @@ class AEFilterSrpfiles extends AEFilterSrpdirs
 	protected function is_excluded_by_api($test, $root)
 	{
 		// Automatically exclude files in the root of the site named index.htm*,
-		// .htaccess.txt and robots.txt
+		// .htaccess and robots.txt
 		$basedir = dirname($test);
 		if(empty($basedir)) {
 			$basename = basename($test);
-			if(in_array($basename,array('index.html', 'index.htm', 'robots.txt', '.htaccess.txt'))) return true;
+			if(in_array($basename,array('index.html', 'index.htm', 'robots.txt', '.htaccess'))) return true;
 		}
 		
 		// Custom files are always allowed

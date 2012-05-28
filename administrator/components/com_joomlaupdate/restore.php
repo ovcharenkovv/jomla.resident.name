@@ -4389,7 +4389,7 @@ class AKText extends AKAbstractObject
 		'THINGS_02' => 'Kickstart is not the only way to extract the backup archive. You can use Akeeba eXtract Wizard and upload the extracted files using FTP instead.',
 		'THINGS_03' => 'Kickstart is bound by your server\'s configuration. As such, it may not work at all.',
 		'THINGS_04' => 'You should download and upload your archive files using FTP in Binary transfer mode. Any other method could lead to a corrupt backup archive and restoration failure.',
-		'THINGS_05' => 'Post-restoration site load errors are usually caused by .htaccess.txt or php.ini directives. You should understand that blank pages, 404 and 500 errors can usually be worked around by editing the aforementioned files. It is not our job to mess with your configuration files, because this could be dangerous for your site.',
+		'THINGS_05' => 'Post-restoration site load errors are usually caused by .htaccess or php.ini directives. You should understand that blank pages, 404 and 500 errors can usually be worked around by editing the aforementioned files. It is not our job to mess with your configuration files, because this could be dangerous for your site.',
 		'THINGS_06' => 'Kickstart overwrites files without a warning. If you are not sure that you are OK with that do not continue.',
 		'THINGS_07' => 'Trying to restore to the temporary URL of a cPanel host (e.g. http://1.2.3.4/~username) will lead to restoration failure and your site will appear to be not working. This is normal and it\'s just how your server and CMS software work.',
 		'THINGS_08' => 'You are supposed to read the documentation before using this software. Most issues can be avoided, or easily worked around, by understanding how this software works.',
@@ -4964,7 +4964,7 @@ class AKFactory {
 				'restore_permissions'	=> self::get('kickstart.setup.restoreperms', 0),
 				'post_proc'				=> self::get('kickstart.procengine', 'direct'),
 				'add_path'				=> $destdir,
-				'rename_files'			=> array( '.htaccess.txt' => 'htaccess.bak', 'php.ini' => 'php.ini.bak' ),
+				'rename_files'			=> array( '.htaccess' => 'htaccess.bak', 'php.ini' => 'php.ini.bak' ),
 				'skip_files'			=> array( basename(__FILE__), 'kickstart.php', 'abiautomation.ini', 'htaccess.bak', 'php.ini.bak' )
 			);
 
@@ -5632,14 +5632,14 @@ if(!defined('KICKSTART'))
 
 				$postproc = AKFactory::getPostProc();
 
-				// Rename htaccess.bak to .htaccess.txt
+				// Rename htaccess.bak to .htaccess
 				if(file_exists($root.'/htaccess.bak'))
 				{
-					if( file_exists($root.'/.htaccess.txt')  )
+					if( file_exists($root.'/.htaccess')  )
 					{
-						$postproc->unlink($root.'/.htaccess.txt');
+						$postproc->unlink($root.'/.htaccess');
 					}
-					$postproc->rename( $root.'/htaccess.bak', $root.'/.htaccess.txt' );
+					$postproc->rename( $root.'/htaccess.bak', $root.'/.htaccess' );
 				}
 
 				// Remove restoration.php
