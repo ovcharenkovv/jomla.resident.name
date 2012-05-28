@@ -4,4 +4,4 @@ administrator/cache/*
 cache/*
 logs/*
 tmp/*
-backup/*.log
+backup/akeeba.backend.log
