@@ -4,3 +4,4 @@ administrator/cache/*
 cache/*
 logs/*
 tmp/*
+backup/*.log
