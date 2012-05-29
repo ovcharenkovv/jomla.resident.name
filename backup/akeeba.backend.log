@@ -1,466 +1,465 @@
-DEBUG   |120528 23:15:12|*** Batching successive steps (nesting level 1)
-DEBUG   |120528 23:15:12|====== Starting Step number 1 ======
-DEBUG   |120528 23:15:12|Kettenrad :: BREAKING STEP BEFORE SWITCHING DOMAIN
-DEBUG   |120528 23:15:12|AECoreDomainInit :: New instance
-DEBUG   |120528 23:15:12|----- Finished operation 1 ------
-INFO    |120528 23:15:12|--------------------------------------------------------------------------------
-INFO    |120528 23:15:12|Akeeba Backup 3.5.1 (2012-05-25)
-INFO    |120528 23:15:12|Got backup?
-INFO    |120528 23:15:12|--------------------------------------------------------------------------------
-INFO    |120528 23:15:12|--- System Information ---
-INFO    |120528 23:15:12|PHP Version        :5.3.10-1ubuntu3.1
-INFO    |120528 23:15:12|OS Version         :Linux
-INFO    |120528 23:15:12|DB Version         :5.5.22-0ubuntu1
-INFO    |120528 23:15:12|Web Server         :Apache/2.2.22 (Ubuntu)
-INFO    |120528 23:15:12|PHP Interface      :apache2handler
-INFO    |120528 23:15:12|Joomla! version    :2.5.4
-INFO    |120528 23:15:12|Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:12.0) Gecko/20100101 Firefox/12.0
-INFO    |120528 23:15:12|Safe mode          :
-INFO    |120528 23:15:12|Display errors     :
-INFO    |120528 23:15:12|Error reporting    :E_ERROR | E_WARNING | E_PARSE | E_NOTICE | E_CORE_ERROR | E_CORE_WARNING | E_COMPILE_ERROR | E_COMPILE_WARNING | E_USER_ERROR | E_USER_WARNING | E_USER_NOTICE
-INFO    |120528 23:15:12|Error display      :off
-INFO    |120528 23:15:12|Disabled functions :pcntl_alarm,pcntl_fork,pcntl_waitpid,pcntl_wait,pcntl_wifexited,pcntl_wifstopped,pcntl_wifsignaled,pcntl_wexitstatus,pcntl_wtermsig,pcntl_wstopsig,pcntl_signal,pcntl_signal_dispatch,pcntl_get_last_error,pcntl_strerror,pcntl_sigprocmask,pcntl_sigwaitinfo,pcntl_sigtimedwait,pcntl_exec,pcntl_getpriority,pcntl_setpriority,
-INFO    |120528 23:15:12|open_basedir restr.:
-INFO    |120528 23:15:12|Max. exec. time    :30
-INFO    |120528 23:15:12|Memory limit       :128M
-INFO    |120528 23:15:12|Current mem. usage :8367028
-INFO    |120528 23:15:12|GZIP Compression   : available (good)
-INFO    |120528 23:15:12|JPATH_BASE         :<root>/administrator
-INFO    |120528 23:15:12|JPATH_SITE         :<root>
-INFO    |120528 23:15:12|JPATH_ROOT         :<root>
-INFO    |120528 23:15:12|JPATH_CACHE        :<root>/administrator/cache
-INFO    |120528 23:15:12|Computed root      :<root>
-INFO    |120528 23:15:12|Output directory   :<root>/backup
-INFO    |120528 23:15:12|--------------------------------------------------------------------------------
-INFO    |120528 23:15:12|Loaded profile #1
-DEBUG   |120528 23:15:12|Archive template name: site-[HOST]-[DATE]-[TIME]
-DEBUG   |120528 23:15:12|Expanded template name: site-resident.name.loc-20120528-201512
-DEBUG   |120528 23:15:12|Backup type is now set to 'dbonly'
-DEBUG   |120528 23:15:12|----- Finished operation 2 ------
-DEBUG   |120528 23:15:12|----- Finished operation 3 ------
-DEBUG   |120528 23:15:12|Successful Smart algorithm on AECoreDomainInit
-DEBUG   |120528 23:15:12|Kettenrad :: Domain 'init' has finished.
-DEBUG   |120528 23:15:12|====== Finished Step number 1 ======
-DEBUG   |120528 23:15:12|*** Engine steps batching: Break flag detected.
-DEBUG   |120528 23:15:12|*** Batching of engine steps finished. I will now return control to the caller.
-DEBUG   |120528 23:15:12|Sleeping for 1916.3150787354 msec, using usleep()
-DEBUG   |120528 23:15:14|Saving Kettenrad instance backend
-DEBUG   |120528 23:15:14|
-DEBUG   |120528 23:15:14| -- Loaded stored Akeeba Factory (backend)
-DEBUG   |120528 23:15:14|====== Starting Step number 1 ======
-DEBUG   |120528 23:15:14|Kettenrad :: BREAKING STEP BEFORE SWITCHING DOMAIN
-DEBUG   |120528 23:15:14|AECoreDomainDb :: New instance
-DEBUG   |120528 23:15:14|AECoreDomainDb :: Preparing instance
-DEBUG   |120528 23:15:14|Fetching filter data from database
-DEBUG   |120528 23:15:14|Loading filters
-DEBUG   |120528 23:15:14|-- Loading filter Srpdirs
-DEBUG   |120528 23:15:14|-- Loading filter Incremental
-DEBUG   |120528 23:15:14|-- Loading filter Tabledata
-DEBUG   |120528 23:15:14|-- Loading filter Srpfiles
-DEBUG   |120528 23:15:14|-- Loading filter Skipdirs
-DEBUG   |120528 23:15:14|-- Loading filter Files
-DEBUG   |120528 23:15:14|-- Loading filter Srpdata
-DEBUG   |120528 23:15:14|-- Loading filter Srpskipdata
-DEBUG   |120528 23:15:14|-- Loading filter Directories
-DEBUG   |120528 23:15:14|-- Loading filter Srpskipfiles
-DEBUG   |120528 23:15:14|-- Loading filter Tables
-DEBUG   |120528 23:15:14|-- Loading filter Skipfiles
-DEBUG   |120528 23:15:14|-- Loading filter PlatformTabledata
-DEBUG   |120528 23:15:14|-- Loading filter PlatformSiteroot
-DEBUG   |120528 23:15:14|-- Loading filter PlatformSkipdirs
-DEBUG   |120528 23:15:14|-- Loading filter PlatformFiles
-DEBUG   |120528 23:15:14|-- Loading filter PlatformLibraries
-DEBUG   |120528 23:15:14|-- Loading filter PlatformSitedb
-DEBUG   |120528 23:15:14|-- Loading filter PlatformFolders
-DEBUG   |120528 23:15:14|-- Loading filter PlatformSystemcachefiles
-DEBUG   |120528 23:15:14|-- Loading filter PlatformSkipfiles
-DEBUG   |120528 23:15:14|Loading optional filters
-DEBUG   |120528 23:15:14|-- Loading optional filter StackPlatformFinder
-DEBUG   |120528 23:15:14|AECoreDomainDb :: Adding only main database
-DEBUG   |120528 23:15:14|----- Finished operation 1 ------
-DEBUG   |120528 23:15:14|AECoreDomainDb :: Iterating next database
-DEBUG   |120528 23:15:14|AEDumpNative :: New instance
-DEBUG   |120528 23:15:14|AEDumpNative :: Processing parameters
-DEBUG   |120528 23:15:14|AEDumpNative :: Instanciating new native database dump engine AEDumpNativeMysql
-DEBUG   |120528 23:15:14|AEDumpNativeMysql :: New instance
-DEBUG   |120528 23:15:14|AEAbstractDump :: Processing parameters
-DEBUG   |120528 23:15:14|AEDumpNativeMysql :: Finding tables to include in the backup set
-INFO    |120528 23:15:15|AEDumpNativeMysql :: Adding mn7fb_ak_profiles (internal name #__ak_profiles)
-INFO    |120528 23:15:15|AEDumpNativeMysql :: Adding mn7fb_ak_stats (internal name #__ak_stats)
-INFO    |120528 23:15:15|AEDumpNativeMysql :: Adding mn7fb_ak_storage (internal name #__ak_storage)
-INFO    |120528 23:15:15|AEDumpNativeMysql :: Adding mn7fb_allvideoshare_categories (internal name #__allvideoshare_categories)
-INFO    |120528 23:15:15|AEDumpNativeMysql :: Adding mn7fb_allvideoshare_config (internal name #__allvideoshare_config)
-INFO    |120528 23:15:15|AEDumpNativeMysql :: Adding mn7fb_allvideoshare_licensing (internal name #__allvideoshare_licensing)
-INFO    |120528 23:15:15|AEDumpNativeMysql :: Adding mn7fb_allvideoshare_players (internal name #__allvideoshare_players)
-INFO    |120528 23:15:15|AEDumpNativeMysql :: Adding mn7fb_allvideoshare_videos (internal name #__allvideoshare_videos)
-INFO    |120528 23:15:15|AEDumpNativeMysql :: Adding mn7fb_assets (internal name #__assets)
-INFO    |120528 23:15:15|AEDumpNativeMysql :: Adding mn7fb_associations (internal name #__associations)
-INFO    |120528 23:15:15|AEDumpNativeMysql :: Adding mn7fb_banner_clients (internal name #__banner_clients)
-INFO    |120528 23:15:15|AEDumpNativeMysql :: Adding mn7fb_banner_tracks (internal name #__banner_tracks)
-INFO    |120528 23:15:15|AEDumpNativeMysql :: Adding mn7fb_banners (internal name #__banners)
-INFO    |120528 23:15:15|AEDumpNativeMysql :: Adding mn7fb_categories (internal name #__categories)
-INFO    |120528 23:15:15|AEDumpNativeMysql :: Adding mn7fb_contact_details (internal name #__contact_details)
-INFO    |120528 23:15:15|AEDumpNativeMysql :: Adding mn7fb_content (internal name #__content)
-INFO    |120528 23:15:15|AEDumpNativeMysql :: Adding mn7fb_content_frontpage (internal name #__content_frontpage)
-INFO    |120528 23:15:15|AEDumpNativeMysql :: Adding mn7fb_content_rating (internal name #__content_rating)
-INFO    |120528 23:15:15|AEDumpNativeMysql :: Adding mn7fb_core_log_searches (internal name #__core_log_searches)
-INFO    |120528 23:15:15|AEDumpNativeMysql :: Adding mn7fb_extensions (internal name #__extensions)
-INFO    |120528 23:15:15|AEDumpNativeMysql :: Adding mn7fb_finder_filters (internal name #__finder_filters)
-INFO    |120528 23:15:15|AEDumpNativeMysql :: Adding mn7fb_finder_links (internal name #__finder_links)
-INFO    |120528 23:15:15|AEDumpNativeMysql :: Adding mn7fb_finder_links_terms0 (internal name #__finder_links_terms0)
-INFO    |120528 23:15:15|AEDumpNativeMysql :: Adding mn7fb_finder_links_terms1 (internal name #__finder_links_terms1)
-INFO    |120528 23:15:15|AEDumpNativeMysql :: Adding mn7fb_finder_links_terms2 (internal name #__finder_links_terms2)
-INFO    |120528 23:15:15|AEDumpNativeMysql :: Adding mn7fb_finder_links_terms3 (internal name #__finder_links_terms3)
-INFO    |120528 23:15:15|AEDumpNativeMysql :: Adding mn7fb_finder_links_terms4 (internal name #__finder_links_terms4)
-INFO    |120528 23:15:15|AEDumpNativeMysql :: Adding mn7fb_finder_links_terms5 (internal name #__finder_links_terms5)
-INFO    |120528 23:15:15|AEDumpNativeMysql :: Adding mn7fb_finder_links_terms6 (internal name #__finder_links_terms6)
-INFO    |120528 23:15:15|AEDumpNativeMysql :: Adding mn7fb_finder_links_terms7 (internal name #__finder_links_terms7)
-INFO    |120528 23:15:15|AEDumpNativeMysql :: Adding mn7fb_finder_links_terms8 (internal name #__finder_links_terms8)
-INFO    |120528 23:15:15|AEDumpNativeMysql :: Adding mn7fb_finder_links_terms9 (internal name #__finder_links_terms9)
-INFO    |120528 23:15:15|AEDumpNativeMysql :: Adding mn7fb_finder_links_termsa (internal name #__finder_links_termsa)
-INFO    |120528 23:15:15|AEDumpNativeMysql :: Adding mn7fb_finder_links_termsb (internal name #__finder_links_termsb)
-INFO    |120528 23:15:15|AEDumpNativeMysql :: Adding mn7fb_finder_links_termsc (internal name #__finder_links_termsc)
-INFO    |120528 23:15:15|AEDumpNativeMysql :: Adding mn7fb_finder_links_termsd (internal name #__finder_links_termsd)
-INFO    |120528 23:15:15|AEDumpNativeMysql :: Adding mn7fb_finder_links_termse (internal name #__finder_links_termse)
-INFO    |120528 23:15:15|AEDumpNativeMysql :: Adding mn7fb_finder_links_termsf (internal name #__finder_links_termsf)
-INFO    |120528 23:15:15|AEDumpNativeMysql :: Adding mn7fb_finder_taxonomy (internal name #__finder_taxonomy)
-INFO    |120528 23:15:15|AEDumpNativeMysql :: Adding mn7fb_finder_taxonomy_map (internal name #__finder_taxonomy_map)
-INFO    |120528 23:15:15|AEDumpNativeMysql :: Adding mn7fb_finder_terms (internal name #__finder_terms)
-INFO    |120528 23:15:15|AEDumpNativeMysql :: Adding mn7fb_finder_terms_common (internal name #__finder_terms_common)
-INFO    |120528 23:15:15|AEDumpNativeMysql :: Adding mn7fb_finder_tokens (internal name #__finder_tokens)
-INFO    |120528 23:15:15|AEDumpNativeMysql :: Adding mn7fb_finder_tokens_aggregate (internal name #__finder_tokens_aggregate)
-INFO    |120528 23:15:15|AEDumpNativeMysql :: Adding mn7fb_finder_types (internal name #__finder_types)
-INFO    |120528 23:15:15|AEDumpNativeMysql :: Adding mn7fb_languages (internal name #__languages)
-INFO    |120528 23:15:15|AEDumpNativeMysql :: Adding mn7fb_menu (internal name #__menu)
-INFO    |120528 23:15:15|AEDumpNativeMysql :: Adding mn7fb_menu_types (internal name #__menu_types)
-INFO    |120528 23:15:15|AEDumpNativeMysql :: Adding mn7fb_messages (internal name #__messages)
-INFO    |120528 23:15:15|AEDumpNativeMysql :: Adding mn7fb_messages_cfg (internal name #__messages_cfg)
-INFO    |120528 23:15:15|AEDumpNativeMysql :: Adding mn7fb_modules (internal name #__modules)
-INFO    |120528 23:15:15|AEDumpNativeMysql :: Adding mn7fb_modules_menu (internal name #__modules_menu)
-INFO    |120528 23:15:15|AEDumpNativeMysql :: Adding mn7fb_newsfeeds (internal name #__newsfeeds)
-INFO    |120528 23:15:15|AEDumpNativeMysql :: Adding mn7fb_overrider (internal name #__overrider)
-INFO    |120528 23:15:15|AEDumpNativeMysql :: Adding mn7fb_redirect_links (internal name #__redirect_links)
-INFO    |120528 23:15:15|AEDumpNativeMysql :: Adding mn7fb_schemas (internal name #__schemas)
-INFO    |120528 23:15:15|AEDumpNativeMysql :: Adding mn7fb_session (internal name #__session)
-INFO    |120528 23:15:15|AEDumpNativeMysql :: Adding mn7fb_template_styles (internal name #__template_styles)
-INFO    |120528 23:15:15|AEDumpNativeMysql :: Adding mn7fb_update_categories (internal name #__update_categories)
-INFO    |120528 23:15:15|AEDumpNativeMysql :: Adding mn7fb_update_sites (internal name #__update_sites)
-INFO    |120528 23:15:15|AEDumpNativeMysql :: Adding mn7fb_update_sites_extensions (internal name #__update_sites_extensions)
-INFO    |120528 23:15:15|AEDumpNativeMysql :: Adding mn7fb_updates (internal name #__updates)
-INFO    |120528 23:15:15|AEDumpNativeMysql :: Adding mn7fb_user_notes (internal name #__user_notes)
-INFO    |120528 23:15:15|AEDumpNativeMysql :: Adding mn7fb_user_profiles (internal name #__user_profiles)
-INFO    |120528 23:15:15|AEDumpNativeMysql :: Adding mn7fb_user_usergroup_map (internal name #__user_usergroup_map)
-INFO    |120528 23:15:15|AEDumpNativeMysql :: Adding mn7fb_usergroups (internal name #__usergroups)
-INFO    |120528 23:15:15|AEDumpNativeMysql :: Adding mn7fb_users (internal name #__users)
-INFO    |120528 23:15:15|AEDumpNativeMysql :: Adding mn7fb_viewlevels (internal name #__viewlevels)
-INFO    |120528 23:15:15|AEDumpNativeMysql :: Adding mn7fb_weblinks (internal name #__weblinks)
-DEBUG   |120528 23:15:15|AEDumpNativeMysql :: Starting CREATE TABLE and dependency scanning
-DEBUG   |120528 23:15:15|AEDumpNativeMysql :: Got database connection
-DEBUG   |120528 23:15:15|AEDumpNativeMysql :: Got SHOW TABLES
-DEBUG   |120528 23:15:15|AEDumpNativeMysql :: Got table list
-DEBUG   |120528 23:15:15|AEDumpNativeMysql :: Processed dependencies
-DEBUG   |120528 23:15:15|XXX AEAbstractDump :: Getting temporary file
-DEBUG   |120528 23:15:15|XXX AEAbstractDump :: Temporary file is <root>/backup/4a284395.sql
-DEBUG   |120528 23:15:15|AkeebaDomainDBBackup :: SQL temp file is <root>/backup/4a284395.sql
-DEBUG   |120528 23:15:15|AkeebaDomainDBBackup :: SQL file location in archive is <root>/backup/site-resident.name.loc-20120528-201512.sql
-DEBUG   |120528 23:15:15|AkeebaDomainDBBackup :: Deleting leftover files, if any
-DEBUG   |120528 23:15:15|AEAbstractDump :: Initializing algorithm for first run
-DEBUG   |120528 23:15:15|----- Finished operation 2 ------
-DEBUG   |120528 23:15:15|Rows on #__ak_profiles : 1
-INFO    |120528 23:15:15|Beginning dump of #__ak_profiles
-DEBUG   |120528 23:15:15|Done dumping #__ak_profiles
-DEBUG   |120528 23:15:15|----- Finished operation 3 ------
-DEBUG   |120528 23:15:15|Rows on #__ak_stats : 3
-INFO    |120528 23:15:15|Beginning dump of #__ak_stats
-DEBUG   |120528 23:15:15|Done dumping #__ak_stats
-DEBUG   |120528 23:15:15|----- Finished operation 4 ------
-DEBUG   |120528 23:15:15|Rows on #__ak_storage : 0
-DEBUG   |120528 23:15:15|Done dumping #__ak_storage
-DEBUG   |120528 23:15:15|----- Finished operation 5 ------
-DEBUG   |120528 23:15:15|Rows on #__allvideoshare_categories : 0
-DEBUG   |120528 23:15:15|Done dumping #__allvideoshare_categories
-DEBUG   |120528 23:15:15|----- Finished operation 6 ------
-DEBUG   |120528 23:15:15|Rows on #__allvideoshare_config : 1
-INFO    |120528 23:15:15|Beginning dump of #__allvideoshare_config
-DEBUG   |120528 23:15:15|Done dumping #__allvideoshare_config
-DEBUG   |120528 23:15:15|----- Finished operation 7 ------
-DEBUG   |120528 23:15:15|Rows on #__allvideoshare_licensing : 1
-INFO    |120528 23:15:15|Beginning dump of #__allvideoshare_licensing
-DEBUG   |120528 23:15:15|Done dumping #__allvideoshare_licensing
-DEBUG   |120528 23:15:15|----- Finished operation 8 ------
-DEBUG   |120528 23:15:15|Rows on #__allvideoshare_players : 1
-INFO    |120528 23:15:15|Beginning dump of #__allvideoshare_players
-DEBUG   |120528 23:15:15|Done dumping #__allvideoshare_players
-DEBUG   |120528 23:15:15|----- Finished operation 9 ------
-DEBUG   |120528 23:15:15|Rows on #__allvideoshare_videos : 0
-DEBUG   |120528 23:15:15|Done dumping #__allvideoshare_videos
-DEBUG   |120528 23:15:15|----- Finished operation 10 ------
-DEBUG   |120528 23:15:15|Rows on #__assets : 52
-INFO    |120528 23:15:15|Beginning dump of #__assets
-DEBUG   |120528 23:15:15|Done dumping #__assets
-DEBUG   |120528 23:15:15|----- Finished operation 11 ------
-DEBUG   |120528 23:15:15|Rows on #__associations : 0
-DEBUG   |120528 23:15:15|Done dumping #__associations
-DEBUG   |120528 23:15:15|----- Finished operation 12 ------
-DEBUG   |120528 23:15:15|Rows on #__banner_clients : 0
-DEBUG   |120528 23:15:15|Done dumping #__banner_clients
-DEBUG   |120528 23:15:15|----- Finished operation 13 ------
-DEBUG   |120528 23:15:15|Rows on #__banner_tracks : 0
-DEBUG   |120528 23:15:15|Done dumping #__banner_tracks
-DEBUG   |120528 23:15:15|----- Finished operation 14 ------
-DEBUG   |120528 23:15:15|Rows on #__banners : 0
-DEBUG   |120528 23:15:15|Done dumping #__banners
-DEBUG   |120528 23:15:15|----- Finished operation 15 ------
-DEBUG   |120528 23:15:15|Rows on #__categories : 11
-INFO    |120528 23:15:15|Beginning dump of #__categories
-DEBUG   |120528 23:15:15|Done dumping #__categories
-DEBUG   |120528 23:15:15|----- Finished operation 16 ------
-DEBUG   |120528 23:15:15|Rows on #__contact_details : 0
-DEBUG   |120528 23:15:15|Done dumping #__contact_details
-DEBUG   |120528 23:15:15|----- Finished operation 17 ------
-DEBUG   |120528 23:15:15|Rows on #__content : 11
-INFO    |120528 23:15:15|Beginning dump of #__content
-DEBUG   |120528 23:15:15|Done dumping #__content
-DEBUG   |120528 23:15:15|----- Finished operation 18 ------
-DEBUG   |120528 23:15:15|Rows on #__content_frontpage : 0
-DEBUG   |120528 23:15:15|Done dumping #__content_frontpage
-DEBUG   |120528 23:15:15|----- Finished operation 19 ------
-DEBUG   |120528 23:15:15|Rows on #__content_rating : 0
-DEBUG   |120528 23:15:15|Done dumping #__content_rating
-DEBUG   |120528 23:15:15|----- Finished operation 20 ------
-DEBUG   |120528 23:15:15|Rows on #__core_log_searches : 0
-DEBUG   |120528 23:15:15|Done dumping #__core_log_searches
-DEBUG   |120528 23:15:15|----- Finished operation 21 ------
-DEBUG   |120528 23:15:15|Rows on #__extensions : 135
-INFO    |120528 23:15:15|Beginning dump of #__extensions
-DEBUG   |120528 23:15:15|Writing 134541 bytes to the dump file
-DEBUG   |120528 23:15:15|Done dumping #__extensions
-DEBUG   |120528 23:15:15|----- Finished operation 22 ------
-DEBUG   |120528 23:15:15|Rows on #__finder_filters : 0
-DEBUG   |120528 23:15:15|Done dumping #__finder_filters
-DEBUG   |120528 23:15:15|----- Finished operation 23 ------
-INFO    |120528 23:15:15|Skipping dumping data of #__finder_links
-DEBUG   |120528 23:15:15|Done dumping #__finder_links
-DEBUG   |120528 23:15:15|----- Finished operation 24 ------
-INFO    |120528 23:15:15|Skipping dumping data of #__finder_links_terms0
-DEBUG   |120528 23:15:15|Done dumping #__finder_links_terms0
-DEBUG   |120528 23:15:15|----- Finished operation 25 ------
-INFO    |120528 23:15:15|Skipping dumping data of #__finder_links_terms1
-DEBUG   |120528 23:15:15|Done dumping #__finder_links_terms1
-DEBUG   |120528 23:15:15|----- Finished operation 26 ------
-INFO    |120528 23:15:15|Skipping dumping data of #__finder_links_terms2
-DEBUG   |120528 23:15:15|Done dumping #__finder_links_terms2
-DEBUG   |120528 23:15:15|----- Finished operation 27 ------
-INFO    |120528 23:15:15|Skipping dumping data of #__finder_links_terms3
-DEBUG   |120528 23:15:15|Done dumping #__finder_links_terms3
-DEBUG   |120528 23:15:15|----- Finished operation 28 ------
-INFO    |120528 23:15:15|Skipping dumping data of #__finder_links_terms4
-DEBUG   |120528 23:15:15|Done dumping #__finder_links_terms4
-DEBUG   |120528 23:15:15|----- Finished operation 29 ------
-INFO    |120528 23:15:15|Skipping dumping data of #__finder_links_terms5
-DEBUG   |120528 23:15:15|Done dumping #__finder_links_terms5
-DEBUG   |120528 23:15:15|----- Finished operation 30 ------
-INFO    |120528 23:15:15|Skipping dumping data of #__finder_links_terms6
-DEBUG   |120528 23:15:15|Done dumping #__finder_links_terms6
-DEBUG   |120528 23:15:15|----- Finished operation 31 ------
-INFO    |120528 23:15:15|Skipping dumping data of #__finder_links_terms7
-DEBUG   |120528 23:15:15|Done dumping #__finder_links_terms7
-DEBUG   |120528 23:15:15|----- Finished operation 32 ------
-INFO    |120528 23:15:15|Skipping dumping data of #__finder_links_terms8
-DEBUG   |120528 23:15:15|Done dumping #__finder_links_terms8
-DEBUG   |120528 23:15:15|----- Finished operation 33 ------
-INFO    |120528 23:15:15|Skipping dumping data of #__finder_links_terms9
-DEBUG   |120528 23:15:15|Done dumping #__finder_links_terms9
-DEBUG   |120528 23:15:15|----- Finished operation 34 ------
-INFO    |120528 23:15:15|Skipping dumping data of #__finder_links_termsa
-DEBUG   |120528 23:15:15|Done dumping #__finder_links_termsa
-DEBUG   |120528 23:15:15|----- Finished operation 35 ------
-INFO    |120528 23:15:15|Skipping dumping data of #__finder_links_termsb
-DEBUG   |120528 23:15:15|Done dumping #__finder_links_termsb
-DEBUG   |120528 23:15:15|----- Finished operation 36 ------
-INFO    |120528 23:15:15|Skipping dumping data of #__finder_links_termsc
-DEBUG   |120528 23:15:15|Done dumping #__finder_links_termsc
-DEBUG   |120528 23:15:15|----- Finished operation 37 ------
-INFO    |120528 23:15:15|Skipping dumping data of #__finder_links_termsd
-DEBUG   |120528 23:15:15|Done dumping #__finder_links_termsd
-DEBUG   |120528 23:15:15|----- Finished operation 38 ------
-INFO    |120528 23:15:15|Skipping dumping data of #__finder_links_termse
-DEBUG   |120528 23:15:15|Done dumping #__finder_links_termse
-DEBUG   |120528 23:15:15|----- Finished operation 39 ------
-INFO    |120528 23:15:15|Skipping dumping data of #__finder_links_termsf
-DEBUG   |120528 23:15:15|Done dumping #__finder_links_termsf
-DEBUG   |120528 23:15:15|----- Finished operation 40 ------
-INFO    |120528 23:15:15|Skipping dumping data of #__finder_taxonomy
-DEBUG   |120528 23:15:15|Done dumping #__finder_taxonomy
-DEBUG   |120528 23:15:15|----- Finished operation 41 ------
-INFO    |120528 23:15:15|Skipping dumping data of #__finder_taxonomy_map
-DEBUG   |120528 23:15:15|Done dumping #__finder_taxonomy_map
-DEBUG   |120528 23:15:15|----- Finished operation 42 ------
-INFO    |120528 23:15:15|Skipping dumping data of #__finder_terms
-DEBUG   |120528 23:15:15|Done dumping #__finder_terms
-DEBUG   |120528 23:15:15|----- Finished operation 43 ------
-DEBUG   |120528 23:15:15|Rows on #__finder_terms_common : 115
-INFO    |120528 23:15:15|Beginning dump of #__finder_terms_common
-DEBUG   |120528 23:15:15|Done dumping #__finder_terms_common
-DEBUG   |120528 23:15:15|----- Finished operation 44 ------
-INFO    |120528 23:15:15|Skipping dumping data of #__finder_tokens
-DEBUG   |120528 23:15:15|Done dumping #__finder_tokens
-DEBUG   |120528 23:15:15|----- Finished operation 45 ------
-INFO    |120528 23:15:15|Skipping dumping data of #__finder_tokens_aggregate
-DEBUG   |120528 23:15:15|Done dumping #__finder_tokens_aggregate
-DEBUG   |120528 23:15:15|----- Finished operation 46 ------
-DEBUG   |120528 23:15:15|Rows on #__finder_types : 0
-DEBUG   |120528 23:15:15|Done dumping #__finder_types
-DEBUG   |120528 23:15:15|----- Finished operation 47 ------
-DEBUG   |120528 23:15:15|Rows on #__languages : 1
-INFO    |120528 23:15:15|Beginning dump of #__languages
-DEBUG   |120528 23:15:15|Done dumping #__languages
-DEBUG   |120528 23:15:15|----- Finished operation 48 ------
-DEBUG   |120528 23:15:15|Rows on #__menu : 67
-INFO    |120528 23:15:15|Beginning dump of #__menu
-DEBUG   |120528 23:15:15|Done dumping #__menu
-DEBUG   |120528 23:15:15|----- Finished operation 49 ------
-DEBUG   |120528 23:15:15|Rows on #__menu_types : 2
-INFO    |120528 23:15:15|Beginning dump of #__menu_types
-DEBUG   |120528 23:15:15|Done dumping #__menu_types
-DEBUG   |120528 23:15:15|----- Finished operation 50 ------
-DEBUG   |120528 23:15:15|Rows on #__messages : 0
-DEBUG   |120528 23:15:15|Done dumping #__messages
-DEBUG   |120528 23:15:15|----- Finished operation 51 ------
-DEBUG   |120528 23:15:15|Rows on #__messages_cfg : 0
-DEBUG   |120528 23:15:15|Done dumping #__messages_cfg
-DEBUG   |120528 23:15:15|----- Finished operation 52 ------
-DEBUG   |120528 23:15:15|Rows on #__modules : 21
-INFO    |120528 23:15:15|Beginning dump of #__modules
-DEBUG   |120528 23:15:15|Done dumping #__modules
-DEBUG   |120528 23:15:15|----- Finished operation 53 ------
-DEBUG   |120528 23:15:15|Rows on #__modules_menu : 43
-INFO    |120528 23:15:15|Beginning dump of #__modules_menu
-DEBUG   |120528 23:15:15|Done dumping #__modules_menu
-DEBUG   |120528 23:15:15|----- Finished operation 54 ------
-DEBUG   |120528 23:15:15|Rows on #__newsfeeds : 0
-DEBUG   |120528 23:15:15|Done dumping #__newsfeeds
-DEBUG   |120528 23:15:15|----- Finished operation 55 ------
-DEBUG   |120528 23:15:15|Rows on #__overrider : 0
-DEBUG   |120528 23:15:15|Done dumping #__overrider
-DEBUG   |120528 23:15:15|----- Finished operation 56 ------
-DEBUG   |120528 23:15:15|Rows on #__redirect_links : 1
-INFO    |120528 23:15:15|Beginning dump of #__redirect_links
-DEBUG   |120528 23:15:15|Done dumping #__redirect_links
-DEBUG   |120528 23:15:15|----- Finished operation 57 ------
-DEBUG   |120528 23:15:15|Rows on #__schemas : 2
-INFO    |120528 23:15:15|Beginning dump of #__schemas
-DEBUG   |120528 23:15:15|Done dumping #__schemas
-DEBUG   |120528 23:15:15|----- Finished operation 58 ------
-INFO    |120528 23:15:15|Skipping dumping data of #__session
-DEBUG   |120528 23:15:15|Done dumping #__session
-DEBUG   |120528 23:15:15|----- Finished operation 59 ------
-DEBUG   |120528 23:15:15|Rows on #__template_styles : 6
-INFO    |120528 23:15:15|Beginning dump of #__template_styles
-DEBUG   |120528 23:15:15|Done dumping #__template_styles
-DEBUG   |120528 23:15:15|----- Finished operation 60 ------
-DEBUG   |120528 23:15:15|Rows on #__update_categories : 0
-DEBUG   |120528 23:15:15|Done dumping #__update_categories
-DEBUG   |120528 23:15:15|----- Finished operation 61 ------
-DEBUG   |120528 23:15:15|Rows on #__update_sites : 2
-INFO    |120528 23:15:15|Beginning dump of #__update_sites
-DEBUG   |120528 23:15:15|Done dumping #__update_sites
-DEBUG   |120528 23:15:15|----- Finished operation 62 ------
-DEBUG   |120528 23:15:15|Rows on #__update_sites_extensions : 2
-INFO    |120528 23:15:15|Beginning dump of #__update_sites_extensions
-DEBUG   |120528 23:15:15|Done dumping #__update_sites_extensions
-DEBUG   |120528 23:15:15|----- Finished operation 63 ------
-DEBUG   |120528 23:15:15|Rows on #__updates : 0
-DEBUG   |120528 23:15:15|Done dumping #__updates
-DEBUG   |120528 23:15:15|----- Finished operation 64 ------
-DEBUG   |120528 23:15:15|Rows on #__user_notes : 0
-DEBUG   |120528 23:15:15|Done dumping #__user_notes
-DEBUG   |120528 23:15:15|----- Finished operation 65 ------
-DEBUG   |120528 23:15:15|Rows on #__user_profiles : 0
-DEBUG   |120528 23:15:15|Done dumping #__user_profiles
-DEBUG   |120528 23:15:15|----- Finished operation 66 ------
-DEBUG   |120528 23:15:15|Rows on #__user_usergroup_map : 1
-INFO    |120528 23:15:15|Beginning dump of #__user_usergroup_map
-DEBUG   |120528 23:15:15|Done dumping #__user_usergroup_map
-DEBUG   |120528 23:15:15|----- Finished operation 67 ------
-DEBUG   |120528 23:15:15|Rows on #__usergroups : 8
-INFO    |120528 23:15:15|Beginning dump of #__usergroups
-DEBUG   |120528 23:15:15|Done dumping #__usergroups
-DEBUG   |120528 23:15:15|----- Finished operation 68 ------
-DEBUG   |120528 23:15:15|Rows on #__users : 1
-INFO    |120528 23:15:15|Beginning dump of #__users
-DEBUG   |120528 23:15:15|Done dumping #__users
-DEBUG   |120528 23:15:15|----- Finished operation 69 ------
-DEBUG   |120528 23:15:15|Rows on #__viewlevels : 3
-INFO    |120528 23:15:15|Beginning dump of #__viewlevels
-DEBUG   |120528 23:15:15|Done dumping #__viewlevels
-DEBUG   |120528 23:15:15|----- Finished operation 70 ------
-DEBUG   |120528 23:15:15|Rows on #__weblinks : 0
-DEBUG   |120528 23:15:15|Done dumping #__weblinks
-INFO    |120528 23:15:15|End of database detected; flushing the dump buffers...
-DEBUG   |120528 23:15:15|Writing 68807 bytes to the dump file
-INFO    |120528 23:15:15|Database has been successfully dumped to SQL file(s)
-DEBUG   |120528 23:15:15|----- Finished operation 71 ------
-DEBUG   |120528 23:15:15|Adding any extra SQL statements imposed by the filters
-DEBUG   |120528 23:15:15|Closing SQL dump file.
-DEBUG   |120528 23:15:15|Moving the SQL dump to its final location
-DEBUG   |120528 23:15:15|Removing temporary file of final SQL dump
-DEBUG   |120528 23:15:15|-- Removing temporary file 4a284395.sql
-DEBUG   |120528 23:15:15|AECoreDomainDb :: No more databases left to iterate
-DEBUG   |120528 23:15:15|----- Finished operation 72 ------
-DEBUG   |120528 23:15:15|AECoreDomainDb :: Skipping databases.ini
-DEBUG   |120528 23:15:15|----- Finished operation 73 ------
-DEBUG   |120528 23:15:15|Successful Smart algorithm on AECoreDomainDb
-DEBUG   |120528 23:15:15|Kettenrad :: Domain 'PackDB' has finished.
-DEBUG   |120528 23:15:15|====== Finished Step number 1 ======
-DEBUG   |120528 23:15:15|*** Engine steps batching: Break flag detected.
-DEBUG   |120528 23:15:15|*** Batching of engine steps finished. I will now return control to the caller.
-DEBUG   |120528 23:15:15|Sleeping for 1343.4860706329 msec, using usleep()
-DEBUG   |120528 23:15:16|Saving Kettenrad instance backend
-DEBUG   |120528 23:15:16|Closing SQL dump file.
-DEBUG   |120528 23:15:17| -- Loaded stored Akeeba Factory (backend)
-DEBUG   |120528 23:15:17|====== Starting Step number 2 ======
-DEBUG   |120528 23:15:17|Kettenrad :: BREAKING STEP BEFORE SWITCHING DOMAIN
-DEBUG   |120528 23:15:17|Finalization action queue: remove_temp_files, update_statistics, update_filesizes, run_post_processing, apply_quotas, apply_remote_quotas, mail_administrators
-DEBUG   |120528 23:15:17|----- Finished operation 1 ------
-DEBUG   |120528 23:15:17|Removing temporary files
-DEBUG   |120528 23:15:17|Updating statistics
-DEBUG   |120528 23:15:17|Removing any old records with site-resident.name.loc-20120528-201512.sql filename
-DEBUG   |120528 23:15:17|1 records found
-DEBUG   |120528 23:15:17|Updating statistics with file sizes
-DEBUG   |120528 23:15:17|Total size of backup archive (in bytes): 203348
-DEBUG   |120528 23:15:17|Loading post-processing engine object (none)
-INFO    |120528 23:15:17|Initializing post-processing engine
-DEBUG   |120528 23:15:17|1 files to process found
-INFO    |120528 23:15:17|Beginning post processing file <root>/backup/site-resident.name.loc-20120528-201512.sql
-INFO    |120528 23:15:17|Finished post-processing file <root>/backup/site-resident.name.loc-20120528-201512.sql
-DEBUG   |120528 23:15:17|Not removing processed file <root>/backup/site-resident.name.loc-20120528-201512.sql
-INFO    |120528 23:15:17|Post-processing has finished for all files
-DEBUG   |120528 23:15:17|----- Finished operation 2 ------
-DEBUG   |120528 23:15:17|----- Finished operation 3 ------
-DEBUG   |120528 23:15:17|Successful Smart algorithm on AECoreDomainFinalization
-DEBUG   |120528 23:15:17|Kettenrad :: Domain 'finale' has finished.
-DEBUG   |120528 23:15:17|====== Finished Step number 2 ======
-DEBUG   |120528 23:15:17|*** Engine steps batching: Break flag detected.
-DEBUG   |120528 23:15:17|*** Batching of engine steps finished. I will now return control to the caller.
-DEBUG   |120528 23:15:17|Sleeping for 1853.3570766449 msec, using usleep()
-DEBUG   |120528 23:15:19|Saving Kettenrad instance backend
-DEBUG   |120528 23:15:19|Closing SQL dump file.
-DEBUG   |120528 23:15:19| -- Loaded stored Akeeba Factory (backend)
-DEBUG   |120528 23:15:19|====== Starting Step number 3 ======
-DEBUG   |120528 23:15:19|Kettenrad :: BREAKING STEP BEFORE SWITCHING DOMAIN
-DEBUG   |120528 23:15:19|Kettenrad :: No more domains to process
-DEBUG   |120528 23:15:19|*** Engine steps batching: Break flag detected.
-DEBUG   |120528 23:15:19|*** Batching of engine steps finished. I will now return control to the caller.
-DEBUG   |120528 23:15:19|Sleeping for 1981.5130233765 msec, using usleep()
-DEBUG   |120528 23:15:21|Saving Kettenrad instance backend
-DEBUG   |120528 23:15:21|Closing SQL dump file.
-DEBUG   |120528 23:15:21| -- Loaded stored Akeeba Factory (backend)
-DEBUG   |120528 23:15:21|Kettenrad :: Just finished
-DEBUG   |120528 23:15:21|*** Batching of engine steps finished. I will now return control to the caller.
-DEBUG   |120528 23:15:21|Sleeping for 1981.6250801086 msec, using usleep()
-DEBUG   |120528 23:15:23|Will not save a finished Kettenrad instance
-DEBUG   |120528 23:15:23|Closing SQL dump file.
-DEBUG   |120528 23:15:45|Kettenrad :: Attempting to load from database (backend)
-DEBUG   |120528 23:15:45| -- Stored Akeeba Factory (backend) not found - hard reset
-DEBUG   |120528 23:15:45|
+DEBUG   |120529 08:31:26|*** Batching successive steps (nesting level 1)
+DEBUG   |120529 08:31:26|====== Starting Step number 1 ======
+DEBUG   |120529 08:31:26|Kettenrad :: BREAKING STEP BEFORE SWITCHING DOMAIN
+DEBUG   |120529 08:31:26|AECoreDomainInit :: New instance
+DEBUG   |120529 08:31:26|----- Finished operation 1 ------
+INFO    |120529 08:31:26|--------------------------------------------------------------------------------
+INFO    |120529 08:31:26|Akeeba Backup 3.5.1 (2012-05-25)
+INFO    |120529 08:31:26|Got backup?
+INFO    |120529 08:31:26|--------------------------------------------------------------------------------
+INFO    |120529 08:31:26|--- System Information ---
+INFO    |120529 08:31:26|PHP Version        :5.3.10-1ubuntu3.1
+INFO    |120529 08:31:26|OS Version         :Linux
+INFO    |120529 08:31:26|DB Version         :5.5.22-0ubuntu1
+INFO    |120529 08:31:26|Web Server         :Apache/2.2.22 (Ubuntu)
+INFO    |120529 08:31:26|PHP Interface      :apache2handler
+INFO    |120529 08:31:26|Joomla! version    :2.5.4
+INFO    |120529 08:31:26|Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:12.0) Gecko/20100101 Firefox/12.0
+INFO    |120529 08:31:26|Safe mode          :
+INFO    |120529 08:31:26|Display errors     :
+INFO    |120529 08:31:26|Error reporting    :E_ERROR | E_WARNING | E_PARSE | E_NOTICE | E_CORE_ERROR | E_CORE_WARNING | E_COMPILE_ERROR | E_COMPILE_WARNING | E_USER_ERROR | E_USER_WARNING | E_USER_NOTICE
+INFO    |120529 08:31:26|Error display      :off
+INFO    |120529 08:31:26|Disabled functions :pcntl_alarm,pcntl_fork,pcntl_waitpid,pcntl_wait,pcntl_wifexited,pcntl_wifstopped,pcntl_wifsignaled,pcntl_wexitstatus,pcntl_wtermsig,pcntl_wstopsig,pcntl_signal,pcntl_signal_dispatch,pcntl_get_last_error,pcntl_strerror,pcntl_sigprocmask,pcntl_sigwaitinfo,pcntl_sigtimedwait,pcntl_exec,pcntl_getpriority,pcntl_setpriority,
+INFO    |120529 08:31:26|open_basedir restr.:
+INFO    |120529 08:31:26|Max. exec. time    :30
+INFO    |120529 08:31:26|Memory limit       :128M
+INFO    |120529 08:31:26|Current mem. usage :8334212
+INFO    |120529 08:31:26|GZIP Compression   : available (good)
+INFO    |120529 08:31:26|JPATH_BASE         :<root>/administrator
+INFO    |120529 08:31:26|JPATH_SITE         :<root>
+INFO    |120529 08:31:26|JPATH_ROOT         :<root>
+INFO    |120529 08:31:26|JPATH_CACHE        :<root>/administrator/cache
+INFO    |120529 08:31:26|Computed root      :<root>
+INFO    |120529 08:31:26|Output directory   :<root>/backup
+INFO    |120529 08:31:26|--------------------------------------------------------------------------------
+INFO    |120529 08:31:26|Loaded profile #1
+DEBUG   |120529 08:31:26|Archive template name: site-[HOST]-[DATE]-[TIME]
+DEBUG   |120529 08:31:26|Expanded template name: site-resident.name.loc-20120529-053126
+DEBUG   |120529 08:31:26|Backup type is now set to 'dbonly'
+DEBUG   |120529 08:31:26|----- Finished operation 2 ------
+DEBUG   |120529 08:31:26|----- Finished operation 3 ------
+DEBUG   |120529 08:31:26|Successful Smart algorithm on AECoreDomainInit
+DEBUG   |120529 08:31:26|Kettenrad :: Domain 'init' has finished.
+DEBUG   |120529 08:31:26|====== Finished Step number 1 ======
+DEBUG   |120529 08:31:26|*** Engine steps batching: Break flag detected.
+DEBUG   |120529 08:31:26|*** Batching of engine steps finished. I will now return control to the caller.
+DEBUG   |120529 08:31:26|Sleeping for 1876.6188621521 msec, using usleep()
+DEBUG   |120529 08:31:28|Saving Kettenrad instance backend
+DEBUG   |120529 08:31:28|
+DEBUG   |120529 08:31:29| -- Loaded stored Akeeba Factory (backend)
+DEBUG   |120529 08:31:29|====== Starting Step number 1 ======
+DEBUG   |120529 08:31:29|Kettenrad :: BREAKING STEP BEFORE SWITCHING DOMAIN
+DEBUG   |120529 08:31:29|AECoreDomainDb :: New instance
+DEBUG   |120529 08:31:29|AECoreDomainDb :: Preparing instance
+DEBUG   |120529 08:31:29|Fetching filter data from database
+DEBUG   |120529 08:31:29|Loading filters
+DEBUG   |120529 08:31:29|-- Loading filter Srpdirs
+DEBUG   |120529 08:31:29|-- Loading filter Incremental
+DEBUG   |120529 08:31:29|-- Loading filter Tabledata
+DEBUG   |120529 08:31:29|-- Loading filter Srpfiles
+DEBUG   |120529 08:31:29|-- Loading filter Skipdirs
+DEBUG   |120529 08:31:29|-- Loading filter Files
+DEBUG   |120529 08:31:29|-- Loading filter Srpdata
+DEBUG   |120529 08:31:29|-- Loading filter Srpskipdata
+DEBUG   |120529 08:31:29|-- Loading filter Directories
+DEBUG   |120529 08:31:29|-- Loading filter Srpskipfiles
+DEBUG   |120529 08:31:29|-- Loading filter Tables
+DEBUG   |120529 08:31:29|-- Loading filter Skipfiles
+DEBUG   |120529 08:31:29|-- Loading filter PlatformTabledata
+DEBUG   |120529 08:31:29|-- Loading filter PlatformSiteroot
+DEBUG   |120529 08:31:29|-- Loading filter PlatformSkipdirs
+DEBUG   |120529 08:31:29|-- Loading filter PlatformFiles
+DEBUG   |120529 08:31:29|-- Loading filter PlatformLibraries
+DEBUG   |120529 08:31:29|-- Loading filter PlatformSitedb
+DEBUG   |120529 08:31:29|-- Loading filter PlatformFolders
+DEBUG   |120529 08:31:29|-- Loading filter PlatformSystemcachefiles
+DEBUG   |120529 08:31:29|-- Loading filter PlatformSkipfiles
+DEBUG   |120529 08:31:29|Loading optional filters
+DEBUG   |120529 08:31:29|-- Loading optional filter StackPlatformFinder
+DEBUG   |120529 08:31:29|AECoreDomainDb :: Adding only main database
+DEBUG   |120529 08:31:29|----- Finished operation 1 ------
+DEBUG   |120529 08:31:29|AECoreDomainDb :: Iterating next database
+DEBUG   |120529 08:31:29|AEDumpNative :: New instance
+DEBUG   |120529 08:31:29|AEDumpNative :: Processing parameters
+DEBUG   |120529 08:31:29|AEDumpNative :: Instanciating new native database dump engine AEDumpNativeMysql
+DEBUG   |120529 08:31:29|AEDumpNativeMysql :: New instance
+DEBUG   |120529 08:31:29|AEAbstractDump :: Processing parameters
+DEBUG   |120529 08:31:29|AEDumpNativeMysql :: Finding tables to include in the backup set
+INFO    |120529 08:31:29|AEDumpNativeMysql :: Adding mn7fb_ak_profiles (internal name #__ak_profiles)
+INFO    |120529 08:31:29|AEDumpNativeMysql :: Adding mn7fb_ak_stats (internal name #__ak_stats)
+INFO    |120529 08:31:29|AEDumpNativeMysql :: Adding mn7fb_ak_storage (internal name #__ak_storage)
+INFO    |120529 08:31:29|AEDumpNativeMysql :: Adding mn7fb_allvideoshare_categories (internal name #__allvideoshare_categories)
+INFO    |120529 08:31:29|AEDumpNativeMysql :: Adding mn7fb_allvideoshare_config (internal name #__allvideoshare_config)
+INFO    |120529 08:31:29|AEDumpNativeMysql :: Adding mn7fb_allvideoshare_licensing (internal name #__allvideoshare_licensing)
+INFO    |120529 08:31:29|AEDumpNativeMysql :: Adding mn7fb_allvideoshare_players (internal name #__allvideoshare_players)
+INFO    |120529 08:31:29|AEDumpNativeMysql :: Adding mn7fb_allvideoshare_videos (internal name #__allvideoshare_videos)
+INFO    |120529 08:31:29|AEDumpNativeMysql :: Adding mn7fb_assets (internal name #__assets)
+INFO    |120529 08:31:29|AEDumpNativeMysql :: Adding mn7fb_associations (internal name #__associations)
+INFO    |120529 08:31:29|AEDumpNativeMysql :: Adding mn7fb_banner_clients (internal name #__banner_clients)
+INFO    |120529 08:31:29|AEDumpNativeMysql :: Adding mn7fb_banner_tracks (internal name #__banner_tracks)
+INFO    |120529 08:31:29|AEDumpNativeMysql :: Adding mn7fb_banners (internal name #__banners)
+INFO    |120529 08:31:29|AEDumpNativeMysql :: Adding mn7fb_categories (internal name #__categories)
+INFO    |120529 08:31:29|AEDumpNativeMysql :: Adding mn7fb_contact_details (internal name #__contact_details)
+INFO    |120529 08:31:29|AEDumpNativeMysql :: Adding mn7fb_content (internal name #__content)
+INFO    |120529 08:31:29|AEDumpNativeMysql :: Adding mn7fb_content_frontpage (internal name #__content_frontpage)
+INFO    |120529 08:31:29|AEDumpNativeMysql :: Adding mn7fb_content_rating (internal name #__content_rating)
+INFO    |120529 08:31:29|AEDumpNativeMysql :: Adding mn7fb_core_log_searches (internal name #__core_log_searches)
+INFO    |120529 08:31:29|AEDumpNativeMysql :: Adding mn7fb_extensions (internal name #__extensions)
+INFO    |120529 08:31:29|AEDumpNativeMysql :: Adding mn7fb_finder_filters (internal name #__finder_filters)
+INFO    |120529 08:31:29|AEDumpNativeMysql :: Adding mn7fb_finder_links (internal name #__finder_links)
+INFO    |120529 08:31:29|AEDumpNativeMysql :: Adding mn7fb_finder_links_terms0 (internal name #__finder_links_terms0)
+INFO    |120529 08:31:29|AEDumpNativeMysql :: Adding mn7fb_finder_links_terms1 (internal name #__finder_links_terms1)
+INFO    |120529 08:31:29|AEDumpNativeMysql :: Adding mn7fb_finder_links_terms2 (internal name #__finder_links_terms2)
+INFO    |120529 08:31:29|AEDumpNativeMysql :: Adding mn7fb_finder_links_terms3 (internal name #__finder_links_terms3)
+INFO    |120529 08:31:29|AEDumpNativeMysql :: Adding mn7fb_finder_links_terms4 (internal name #__finder_links_terms4)
+INFO    |120529 08:31:29|AEDumpNativeMysql :: Adding mn7fb_finder_links_terms5 (internal name #__finder_links_terms5)
+INFO    |120529 08:31:29|AEDumpNativeMysql :: Adding mn7fb_finder_links_terms6 (internal name #__finder_links_terms6)
+INFO    |120529 08:31:29|AEDumpNativeMysql :: Adding mn7fb_finder_links_terms7 (internal name #__finder_links_terms7)
+INFO    |120529 08:31:29|AEDumpNativeMysql :: Adding mn7fb_finder_links_terms8 (internal name #__finder_links_terms8)
+INFO    |120529 08:31:29|AEDumpNativeMysql :: Adding mn7fb_finder_links_terms9 (internal name #__finder_links_terms9)
+INFO    |120529 08:31:29|AEDumpNativeMysql :: Adding mn7fb_finder_links_termsa (internal name #__finder_links_termsa)
+INFO    |120529 08:31:29|AEDumpNativeMysql :: Adding mn7fb_finder_links_termsb (internal name #__finder_links_termsb)
+INFO    |120529 08:31:29|AEDumpNativeMysql :: Adding mn7fb_finder_links_termsc (internal name #__finder_links_termsc)
+INFO    |120529 08:31:29|AEDumpNativeMysql :: Adding mn7fb_finder_links_termsd (internal name #__finder_links_termsd)
+INFO    |120529 08:31:29|AEDumpNativeMysql :: Adding mn7fb_finder_links_termse (internal name #__finder_links_termse)
+INFO    |120529 08:31:29|AEDumpNativeMysql :: Adding mn7fb_finder_links_termsf (internal name #__finder_links_termsf)
+INFO    |120529 08:31:29|AEDumpNativeMysql :: Adding mn7fb_finder_taxonomy (internal name #__finder_taxonomy)
+INFO    |120529 08:31:29|AEDumpNativeMysql :: Adding mn7fb_finder_taxonomy_map (internal name #__finder_taxonomy_map)
+INFO    |120529 08:31:29|AEDumpNativeMysql :: Adding mn7fb_finder_terms (internal name #__finder_terms)
+INFO    |120529 08:31:29|AEDumpNativeMysql :: Adding mn7fb_finder_terms_common (internal name #__finder_terms_common)
+INFO    |120529 08:31:29|AEDumpNativeMysql :: Adding mn7fb_finder_tokens (internal name #__finder_tokens)
+INFO    |120529 08:31:29|AEDumpNativeMysql :: Adding mn7fb_finder_tokens_aggregate (internal name #__finder_tokens_aggregate)
+INFO    |120529 08:31:29|AEDumpNativeMysql :: Adding mn7fb_finder_types (internal name #__finder_types)
+INFO    |120529 08:31:29|AEDumpNativeMysql :: Adding mn7fb_languages (internal name #__languages)
+INFO    |120529 08:31:29|AEDumpNativeMysql :: Adding mn7fb_menu (internal name #__menu)
+INFO    |120529 08:31:29|AEDumpNativeMysql :: Adding mn7fb_menu_types (internal name #__menu_types)
+INFO    |120529 08:31:29|AEDumpNativeMysql :: Adding mn7fb_messages (internal name #__messages)
+INFO    |120529 08:31:29|AEDumpNativeMysql :: Adding mn7fb_messages_cfg (internal name #__messages_cfg)
+INFO    |120529 08:31:29|AEDumpNativeMysql :: Adding mn7fb_modules (internal name #__modules)
+INFO    |120529 08:31:29|AEDumpNativeMysql :: Adding mn7fb_modules_menu (internal name #__modules_menu)
+INFO    |120529 08:31:29|AEDumpNativeMysql :: Adding mn7fb_newsfeeds (internal name #__newsfeeds)
+INFO    |120529 08:31:29|AEDumpNativeMysql :: Adding mn7fb_overrider (internal name #__overrider)
+INFO    |120529 08:31:29|AEDumpNativeMysql :: Adding mn7fb_redirect_links (internal name #__redirect_links)
+INFO    |120529 08:31:29|AEDumpNativeMysql :: Adding mn7fb_schemas (internal name #__schemas)
+INFO    |120529 08:31:29|AEDumpNativeMysql :: Adding mn7fb_session (internal name #__session)
+INFO    |120529 08:31:29|AEDumpNativeMysql :: Adding mn7fb_template_styles (internal name #__template_styles)
+INFO    |120529 08:31:29|AEDumpNativeMysql :: Adding mn7fb_update_categories (internal name #__update_categories)
+INFO    |120529 08:31:29|AEDumpNativeMysql :: Adding mn7fb_update_sites (internal name #__update_sites)
+INFO    |120529 08:31:29|AEDumpNativeMysql :: Adding mn7fb_update_sites_extensions (internal name #__update_sites_extensions)
+INFO    |120529 08:31:29|AEDumpNativeMysql :: Adding mn7fb_updates (internal name #__updates)
+INFO    |120529 08:31:29|AEDumpNativeMysql :: Adding mn7fb_user_notes (internal name #__user_notes)
+INFO    |120529 08:31:29|AEDumpNativeMysql :: Adding mn7fb_user_profiles (internal name #__user_profiles)
+INFO    |120529 08:31:29|AEDumpNativeMysql :: Adding mn7fb_user_usergroup_map (internal name #__user_usergroup_map)
+INFO    |120529 08:31:29|AEDumpNativeMysql :: Adding mn7fb_usergroups (internal name #__usergroups)
+INFO    |120529 08:31:29|AEDumpNativeMysql :: Adding mn7fb_users (internal name #__users)
+INFO    |120529 08:31:29|AEDumpNativeMysql :: Adding mn7fb_viewlevels (internal name #__viewlevels)
+INFO    |120529 08:31:29|AEDumpNativeMysql :: Adding mn7fb_weblinks (internal name #__weblinks)
+DEBUG   |120529 08:31:29|AEDumpNativeMysql :: Starting CREATE TABLE and dependency scanning
+DEBUG   |120529 08:31:29|AEDumpNativeMysql :: Got database connection
+DEBUG   |120529 08:31:29|AEDumpNativeMysql :: Got SHOW TABLES
+DEBUG   |120529 08:31:29|AEDumpNativeMysql :: Got table list
+DEBUG   |120529 08:31:29|AEDumpNativeMysql :: Processed dependencies
+DEBUG   |120529 08:31:29|XXX AEAbstractDump :: Getting temporary file
+DEBUG   |120529 08:31:29|XXX AEAbstractDump :: Temporary file is <root>/backup/bf576926.sql
+DEBUG   |120529 08:31:29|AkeebaDomainDBBackup :: SQL temp file is <root>/backup/bf576926.sql
+DEBUG   |120529 08:31:29|AkeebaDomainDBBackup :: SQL file location in archive is <root>/backup/site-resident.name.loc-20120529-053126.sql
+DEBUG   |120529 08:31:29|AkeebaDomainDBBackup :: Deleting leftover files, if any
+DEBUG   |120529 08:31:29|AEAbstractDump :: Initializing algorithm for first run
+DEBUG   |120529 08:31:29|----- Finished operation 2 ------
+DEBUG   |120529 08:31:29|Rows on #__ak_profiles : 1
+INFO    |120529 08:31:29|Beginning dump of #__ak_profiles
+DEBUG   |120529 08:31:29|Done dumping #__ak_profiles
+DEBUG   |120529 08:31:29|----- Finished operation 3 ------
+DEBUG   |120529 08:31:29|Rows on #__ak_stats : 4
+INFO    |120529 08:31:29|Beginning dump of #__ak_stats
+DEBUG   |120529 08:31:29|Done dumping #__ak_stats
+DEBUG   |120529 08:31:29|----- Finished operation 4 ------
+DEBUG   |120529 08:31:29|Rows on #__ak_storage : 0
+DEBUG   |120529 08:31:29|Done dumping #__ak_storage
+DEBUG   |120529 08:31:29|----- Finished operation 5 ------
+DEBUG   |120529 08:31:29|Rows on #__allvideoshare_categories : 0
+DEBUG   |120529 08:31:29|Done dumping #__allvideoshare_categories
+DEBUG   |120529 08:31:29|----- Finished operation 6 ------
+DEBUG   |120529 08:31:29|Rows on #__allvideoshare_config : 1
+INFO    |120529 08:31:29|Beginning dump of #__allvideoshare_config
+DEBUG   |120529 08:31:29|Done dumping #__allvideoshare_config
+DEBUG   |120529 08:31:29|----- Finished operation 7 ------
+DEBUG   |120529 08:31:29|Rows on #__allvideoshare_licensing : 1
+INFO    |120529 08:31:29|Beginning dump of #__allvideoshare_licensing
+DEBUG   |120529 08:31:29|Done dumping #__allvideoshare_licensing
+DEBUG   |120529 08:31:29|----- Finished operation 8 ------
+DEBUG   |120529 08:31:29|Rows on #__allvideoshare_players : 1
+INFO    |120529 08:31:29|Beginning dump of #__allvideoshare_players
+DEBUG   |120529 08:31:29|Done dumping #__allvideoshare_players
+DEBUG   |120529 08:31:29|----- Finished operation 9 ------
+DEBUG   |120529 08:31:29|Rows on #__allvideoshare_videos : 0
+DEBUG   |120529 08:31:29|Done dumping #__allvideoshare_videos
+DEBUG   |120529 08:31:29|----- Finished operation 10 ------
+DEBUG   |120529 08:31:29|Rows on #__assets : 52
+INFO    |120529 08:31:29|Beginning dump of #__assets
+DEBUG   |120529 08:31:29|Done dumping #__assets
+DEBUG   |120529 08:31:29|----- Finished operation 11 ------
+DEBUG   |120529 08:31:29|Rows on #__associations : 0
+DEBUG   |120529 08:31:29|Done dumping #__associations
+DEBUG   |120529 08:31:29|----- Finished operation 12 ------
+DEBUG   |120529 08:31:29|Rows on #__banner_clients : 0
+DEBUG   |120529 08:31:29|Done dumping #__banner_clients
+DEBUG   |120529 08:31:29|----- Finished operation 13 ------
+DEBUG   |120529 08:31:29|Rows on #__banner_tracks : 0
+DEBUG   |120529 08:31:29|Done dumping #__banner_tracks
+DEBUG   |120529 08:31:29|----- Finished operation 14 ------
+DEBUG   |120529 08:31:29|Rows on #__banners : 0
+DEBUG   |120529 08:31:29|Done dumping #__banners
+DEBUG   |120529 08:31:29|----- Finished operation 15 ------
+DEBUG   |120529 08:31:29|Rows on #__categories : 11
+INFO    |120529 08:31:29|Beginning dump of #__categories
+DEBUG   |120529 08:31:29|Done dumping #__categories
+DEBUG   |120529 08:31:29|----- Finished operation 16 ------
+DEBUG   |120529 08:31:29|Rows on #__contact_details : 0
+DEBUG   |120529 08:31:29|Done dumping #__contact_details
+DEBUG   |120529 08:31:29|----- Finished operation 17 ------
+DEBUG   |120529 08:31:29|Rows on #__content : 11
+INFO    |120529 08:31:29|Beginning dump of #__content
+DEBUG   |120529 08:31:29|Done dumping #__content
+DEBUG   |120529 08:31:29|----- Finished operation 18 ------
+DEBUG   |120529 08:31:29|Rows on #__content_frontpage : 0
+DEBUG   |120529 08:31:29|Done dumping #__content_frontpage
+DEBUG   |120529 08:31:29|----- Finished operation 19 ------
+DEBUG   |120529 08:31:29|Rows on #__content_rating : 0
+DEBUG   |120529 08:31:29|Done dumping #__content_rating
+DEBUG   |120529 08:31:29|----- Finished operation 20 ------
+DEBUG   |120529 08:31:29|Rows on #__core_log_searches : 0
+DEBUG   |120529 08:31:29|Done dumping #__core_log_searches
+DEBUG   |120529 08:31:29|----- Finished operation 21 ------
+DEBUG   |120529 08:31:29|Rows on #__extensions : 135
+INFO    |120529 08:31:29|Beginning dump of #__extensions
+DEBUG   |120529 08:31:29|Writing 134842 bytes to the dump file
+DEBUG   |120529 08:31:29|Done dumping #__extensions
+DEBUG   |120529 08:31:29|----- Finished operation 22 ------
+DEBUG   |120529 08:31:29|Rows on #__finder_filters : 0
+DEBUG   |120529 08:31:29|Done dumping #__finder_filters
+DEBUG   |120529 08:31:29|----- Finished operation 23 ------
+INFO    |120529 08:31:29|Skipping dumping data of #__finder_links
+DEBUG   |120529 08:31:29|Done dumping #__finder_links
+DEBUG   |120529 08:31:29|----- Finished operation 24 ------
+INFO    |120529 08:31:29|Skipping dumping data of #__finder_links_terms0
+DEBUG   |120529 08:31:29|Done dumping #__finder_links_terms0
+DEBUG   |120529 08:31:29|----- Finished operation 25 ------
+INFO    |120529 08:31:29|Skipping dumping data of #__finder_links_terms1
+DEBUG   |120529 08:31:29|Done dumping #__finder_links_terms1
+DEBUG   |120529 08:31:29|----- Finished operation 26 ------
+INFO    |120529 08:31:29|Skipping dumping data of #__finder_links_terms2
+DEBUG   |120529 08:31:29|Done dumping #__finder_links_terms2
+DEBUG   |120529 08:31:29|----- Finished operation 27 ------
+INFO    |120529 08:31:29|Skipping dumping data of #__finder_links_terms3
+DEBUG   |120529 08:31:29|Done dumping #__finder_links_terms3
+DEBUG   |120529 08:31:29|----- Finished operation 28 ------
+INFO    |120529 08:31:29|Skipping dumping data of #__finder_links_terms4
+DEBUG   |120529 08:31:29|Done dumping #__finder_links_terms4
+DEBUG   |120529 08:31:29|----- Finished operation 29 ------
+INFO    |120529 08:31:29|Skipping dumping data of #__finder_links_terms5
+DEBUG   |120529 08:31:29|Done dumping #__finder_links_terms5
+DEBUG   |120529 08:31:29|----- Finished operation 30 ------
+INFO    |120529 08:31:29|Skipping dumping data of #__finder_links_terms6
+DEBUG   |120529 08:31:29|Done dumping #__finder_links_terms6
+DEBUG   |120529 08:31:29|----- Finished operation 31 ------
+INFO    |120529 08:31:29|Skipping dumping data of #__finder_links_terms7
+DEBUG   |120529 08:31:29|Done dumping #__finder_links_terms7
+DEBUG   |120529 08:31:29|----- Finished operation 32 ------
+INFO    |120529 08:31:29|Skipping dumping data of #__finder_links_terms8
+DEBUG   |120529 08:31:29|Done dumping #__finder_links_terms8
+DEBUG   |120529 08:31:29|----- Finished operation 33 ------
+INFO    |120529 08:31:29|Skipping dumping data of #__finder_links_terms9
+DEBUG   |120529 08:31:29|Done dumping #__finder_links_terms9
+DEBUG   |120529 08:31:29|----- Finished operation 34 ------
+INFO    |120529 08:31:29|Skipping dumping data of #__finder_links_termsa
+DEBUG   |120529 08:31:29|Done dumping #__finder_links_termsa
+DEBUG   |120529 08:31:29|----- Finished operation 35 ------
+INFO    |120529 08:31:29|Skipping dumping data of #__finder_links_termsb
+DEBUG   |120529 08:31:29|Done dumping #__finder_links_termsb
+DEBUG   |120529 08:31:29|----- Finished operation 36 ------
+INFO    |120529 08:31:29|Skipping dumping data of #__finder_links_termsc
+DEBUG   |120529 08:31:29|Done dumping #__finder_links_termsc
+DEBUG   |120529 08:31:29|----- Finished operation 37 ------
+INFO    |120529 08:31:29|Skipping dumping data of #__finder_links_termsd
+DEBUG   |120529 08:31:29|Done dumping #__finder_links_termsd
+DEBUG   |120529 08:31:29|----- Finished operation 38 ------
+INFO    |120529 08:31:29|Skipping dumping data of #__finder_links_termse
+DEBUG   |120529 08:31:29|Done dumping #__finder_links_termse
+DEBUG   |120529 08:31:29|----- Finished operation 39 ------
+INFO    |120529 08:31:29|Skipping dumping data of #__finder_links_termsf
+DEBUG   |120529 08:31:29|Done dumping #__finder_links_termsf
+DEBUG   |120529 08:31:29|----- Finished operation 40 ------
+INFO    |120529 08:31:29|Skipping dumping data of #__finder_taxonomy
+DEBUG   |120529 08:31:29|Done dumping #__finder_taxonomy
+DEBUG   |120529 08:31:29|----- Finished operation 41 ------
+INFO    |120529 08:31:29|Skipping dumping data of #__finder_taxonomy_map
+DEBUG   |120529 08:31:29|Done dumping #__finder_taxonomy_map
+DEBUG   |120529 08:31:29|----- Finished operation 42 ------
+INFO    |120529 08:31:29|Skipping dumping data of #__finder_terms
+DEBUG   |120529 08:31:29|Done dumping #__finder_terms
+DEBUG   |120529 08:31:29|----- Finished operation 43 ------
+DEBUG   |120529 08:31:29|Rows on #__finder_terms_common : 115
+INFO    |120529 08:31:29|Beginning dump of #__finder_terms_common
+DEBUG   |120529 08:31:29|Done dumping #__finder_terms_common
+DEBUG   |120529 08:31:29|----- Finished operation 44 ------
+INFO    |120529 08:31:29|Skipping dumping data of #__finder_tokens
+DEBUG   |120529 08:31:29|Done dumping #__finder_tokens
+DEBUG   |120529 08:31:29|----- Finished operation 45 ------
+INFO    |120529 08:31:29|Skipping dumping data of #__finder_tokens_aggregate
+DEBUG   |120529 08:31:29|Done dumping #__finder_tokens_aggregate
+DEBUG   |120529 08:31:29|----- Finished operation 46 ------
+DEBUG   |120529 08:31:29|Rows on #__finder_types : 0
+DEBUG   |120529 08:31:29|Done dumping #__finder_types
+DEBUG   |120529 08:31:29|----- Finished operation 47 ------
+DEBUG   |120529 08:31:29|Rows on #__languages : 1
+INFO    |120529 08:31:29|Beginning dump of #__languages
+DEBUG   |120529 08:31:29|Done dumping #__languages
+DEBUG   |120529 08:31:29|----- Finished operation 48 ------
+DEBUG   |120529 08:31:29|Rows on #__menu : 67
+INFO    |120529 08:31:29|Beginning dump of #__menu
+DEBUG   |120529 08:31:29|Done dumping #__menu
+DEBUG   |120529 08:31:29|----- Finished operation 49 ------
+DEBUG   |120529 08:31:29|Rows on #__menu_types : 2
+INFO    |120529 08:31:29|Beginning dump of #__menu_types
+DEBUG   |120529 08:31:29|Done dumping #__menu_types
+DEBUG   |120529 08:31:29|----- Finished operation 50 ------
+DEBUG   |120529 08:31:29|Rows on #__messages : 0
+DEBUG   |120529 08:31:29|Done dumping #__messages
+DEBUG   |120529 08:31:29|----- Finished operation 51 ------
+DEBUG   |120529 08:31:29|Rows on #__messages_cfg : 0
+DEBUG   |120529 08:31:29|Done dumping #__messages_cfg
+DEBUG   |120529 08:31:29|----- Finished operation 52 ------
+DEBUG   |120529 08:31:29|Rows on #__modules : 22
+INFO    |120529 08:31:29|Beginning dump of #__modules
+DEBUG   |120529 08:31:29|Done dumping #__modules
+DEBUG   |120529 08:31:29|----- Finished operation 53 ------
+DEBUG   |120529 08:31:29|Rows on #__modules_menu : 44
+INFO    |120529 08:31:29|Beginning dump of #__modules_menu
+DEBUG   |120529 08:31:29|Done dumping #__modules_menu
+DEBUG   |120529 08:31:29|----- Finished operation 54 ------
+DEBUG   |120529 08:31:29|Rows on #__newsfeeds : 0
+DEBUG   |120529 08:31:29|Done dumping #__newsfeeds
+DEBUG   |120529 08:31:29|----- Finished operation 55 ------
+DEBUG   |120529 08:31:29|Rows on #__overrider : 0
+DEBUG   |120529 08:31:29|Done dumping #__overrider
+DEBUG   |120529 08:31:29|----- Finished operation 56 ------
+DEBUG   |120529 08:31:29|Rows on #__redirect_links : 1
+INFO    |120529 08:31:29|Beginning dump of #__redirect_links
+DEBUG   |120529 08:31:29|Done dumping #__redirect_links
+DEBUG   |120529 08:31:29|----- Finished operation 57 ------
+DEBUG   |120529 08:31:29|Rows on #__schemas : 2
+INFO    |120529 08:31:29|Beginning dump of #__schemas
+DEBUG   |120529 08:31:29|Done dumping #__schemas
+DEBUG   |120529 08:31:29|----- Finished operation 58 ------
+INFO    |120529 08:31:29|Skipping dumping data of #__session
+DEBUG   |120529 08:31:29|Done dumping #__session
+DEBUG   |120529 08:31:29|----- Finished operation 59 ------
+DEBUG   |120529 08:31:29|Rows on #__template_styles : 6
+INFO    |120529 08:31:29|Beginning dump of #__template_styles
+DEBUG   |120529 08:31:29|Done dumping #__template_styles
+DEBUG   |120529 08:31:29|----- Finished operation 60 ------
+DEBUG   |120529 08:31:29|Rows on #__update_categories : 0
+DEBUG   |120529 08:31:29|Done dumping #__update_categories
+DEBUG   |120529 08:31:29|----- Finished operation 61 ------
+DEBUG   |120529 08:31:29|Rows on #__update_sites : 2
+INFO    |120529 08:31:29|Beginning dump of #__update_sites
+DEBUG   |120529 08:31:29|Done dumping #__update_sites
+DEBUG   |120529 08:31:29|----- Finished operation 62 ------
+DEBUG   |120529 08:31:29|Rows on #__update_sites_extensions : 2
+INFO    |120529 08:31:29|Beginning dump of #__update_sites_extensions
+DEBUG   |120529 08:31:29|Done dumping #__update_sites_extensions
+DEBUG   |120529 08:31:29|----- Finished operation 63 ------
+DEBUG   |120529 08:31:29|Rows on #__updates : 0
+DEBUG   |120529 08:31:29|Done dumping #__updates
+DEBUG   |120529 08:31:29|----- Finished operation 64 ------
+DEBUG   |120529 08:31:29|Rows on #__user_notes : 0
+DEBUG   |120529 08:31:29|Done dumping #__user_notes
+DEBUG   |120529 08:31:29|----- Finished operation 65 ------
+DEBUG   |120529 08:31:29|Rows on #__user_profiles : 0
+DEBUG   |120529 08:31:29|Done dumping #__user_profiles
+DEBUG   |120529 08:31:29|----- Finished operation 66 ------
+DEBUG   |120529 08:31:29|Rows on #__user_usergroup_map : 1
+INFO    |120529 08:31:29|Beginning dump of #__user_usergroup_map
+DEBUG   |120529 08:31:29|Done dumping #__user_usergroup_map
+DEBUG   |120529 08:31:29|----- Finished operation 67 ------
+DEBUG   |120529 08:31:29|Rows on #__usergroups : 8
+INFO    |120529 08:31:29|Beginning dump of #__usergroups
+DEBUG   |120529 08:31:29|Done dumping #__usergroups
+DEBUG   |120529 08:31:29|----- Finished operation 68 ------
+DEBUG   |120529 08:31:29|Rows on #__users : 1
+INFO    |120529 08:31:29|Beginning dump of #__users
+DEBUG   |120529 08:31:29|Done dumping #__users
+DEBUG   |120529 08:31:29|----- Finished operation 69 ------
+DEBUG   |120529 08:31:29|Rows on #__viewlevels : 3
+INFO    |120529 08:31:29|Beginning dump of #__viewlevels
+DEBUG   |120529 08:31:29|Done dumping #__viewlevels
+DEBUG   |120529 08:31:29|----- Finished operation 70 ------
+DEBUG   |120529 08:31:29|Rows on #__weblinks : 0
+DEBUG   |120529 08:31:29|Done dumping #__weblinks
+INFO    |120529 08:31:29|End of database detected; flushing the dump buffers...
+DEBUG   |120529 08:31:29|Writing 69248 bytes to the dump file
+INFO    |120529 08:31:29|Database has been successfully dumped to SQL file(s)
+DEBUG   |120529 08:31:29|----- Finished operation 71 ------
+DEBUG   |120529 08:31:29|Adding any extra SQL statements imposed by the filters
+DEBUG   |120529 08:31:29|Closing SQL dump file.
+DEBUG   |120529 08:31:29|Moving the SQL dump to its final location
+DEBUG   |120529 08:31:29|Removing temporary file of final SQL dump
+DEBUG   |120529 08:31:29|-- Removing temporary file bf576926.sql
+DEBUG   |120529 08:31:29|AECoreDomainDb :: No more databases left to iterate
+DEBUG   |120529 08:31:29|----- Finished operation 72 ------
+DEBUG   |120529 08:31:29|AECoreDomainDb :: Skipping databases.ini
+DEBUG   |120529 08:31:29|----- Finished operation 73 ------
+DEBUG   |120529 08:31:29|Successful Smart algorithm on AECoreDomainDb
+DEBUG   |120529 08:31:29|Kettenrad :: Domain 'PackDB' has finished.
+DEBUG   |120529 08:31:29|====== Finished Step number 1 ======
+DEBUG   |120529 08:31:29|*** Engine steps batching: Break flag detected.
+DEBUG   |120529 08:31:29|*** Batching of engine steps finished. I will now return control to the caller.
+DEBUG   |120529 08:31:29|Sleeping for 1362.1969223022 msec, using usleep()
+DEBUG   |120529 08:31:31|Saving Kettenrad instance backend
+DEBUG   |120529 08:31:31|Closing SQL dump file.
+DEBUG   |120529 08:31:31| -- Loaded stored Akeeba Factory (backend)
+DEBUG   |120529 08:31:31|====== Starting Step number 2 ======
+DEBUG   |120529 08:31:31|Kettenrad :: BREAKING STEP BEFORE SWITCHING DOMAIN
+DEBUG   |120529 08:31:31|Finalization action queue: remove_temp_files, update_statistics, update_filesizes, run_post_processing, apply_quotas, apply_remote_quotas, mail_administrators
+DEBUG   |120529 08:31:31|----- Finished operation 1 ------
+DEBUG   |120529 08:31:31|Removing temporary files
+DEBUG   |120529 08:31:31|Updating statistics
+DEBUG   |120529 08:31:31|Removing any old records with site-resident.name.loc-20120529-053126.sql filename
+DEBUG   |120529 08:31:31|1 records found
+DEBUG   |120529 08:31:31|Updating statistics with file sizes
+DEBUG   |120529 08:31:31|Total size of backup archive (in bytes): 204090
+DEBUG   |120529 08:31:31|Loading post-processing engine object (none)
+INFO    |120529 08:31:31|Initializing post-processing engine
+DEBUG   |120529 08:31:31|1 files to process found
+INFO    |120529 08:31:31|Beginning post processing file <root>/backup/site-resident.name.loc-20120529-053126.sql
+INFO    |120529 08:31:31|Finished post-processing file <root>/backup/site-resident.name.loc-20120529-053126.sql
+DEBUG   |120529 08:31:31|Not removing processed file <root>/backup/site-resident.name.loc-20120529-053126.sql
+INFO    |120529 08:31:31|Post-processing has finished for all files
+DEBUG   |120529 08:31:31|Processing count quotas
+DEBUG   |120529 08:31:31|Applying quotas
+DEBUG   |120529 08:31:31|----- Finished operation 2 ------
+DEBUG   |120529 08:31:31|----- Finished operation 3 ------
+DEBUG   |120529 08:31:31|Successful Smart algorithm on AECoreDomainFinalization
+DEBUG   |120529 08:31:31|Kettenrad :: Domain 'finale' has finished.
+DEBUG   |120529 08:31:31|====== Finished Step number 2 ======
+DEBUG   |120529 08:31:31|*** Engine steps batching: Break flag detected.
+DEBUG   |120529 08:31:31|*** Batching of engine steps finished. I will now return control to the caller.
+DEBUG   |120529 08:31:31|Sleeping for 1792.8249835968 msec, using usleep()
+DEBUG   |120529 08:31:33|Saving Kettenrad instance backend
+DEBUG   |120529 08:31:33|Closing SQL dump file.
+DEBUG   |120529 08:31:33| -- Loaded stored Akeeba Factory (backend)
+DEBUG   |120529 08:31:33|====== Starting Step number 3 ======
+DEBUG   |120529 08:31:33|Kettenrad :: BREAKING STEP BEFORE SWITCHING DOMAIN
+DEBUG   |120529 08:31:33|Kettenrad :: No more domains to process
+DEBUG   |120529 08:31:33|*** Engine steps batching: Break flag detected.
+DEBUG   |120529 08:31:33|*** Batching of engine steps finished. I will now return control to the caller.
+DEBUG   |120529 08:31:33|Sleeping for 1978.1889915466 msec, using usleep()
+DEBUG   |120529 08:31:35|Saving Kettenrad instance backend
+DEBUG   |120529 08:31:35|Closing SQL dump file.
+DEBUG   |120529 08:31:35| -- Loaded stored Akeeba Factory (backend)
+DEBUG   |120529 08:31:35|Kettenrad :: Just finished
+DEBUG   |120529 08:31:35|*** Batching of engine steps finished. I will now return control to the caller.
+DEBUG   |120529 08:31:35|Sleeping for 1981.5678596497 msec, using usleep()
+DEBUG   |120529 08:31:37|Will not save a finished Kettenrad instance
+DEBUG   |120529 08:31:37|Closing SQL dump file.

@@ -117,13 +117,11 @@ require(YOURBASEPATH . DS . "rt_utils.php");
 		<?php endif; ?>
 		<?php if ($this->countModules('bottom')) : ?>
 		<div id="footer">
-			<div class="footer-pad">
+			<span class ="copyright">Copyright &copy; Resident</span>
+            <div class="footer-pad">
                 <jdoc:include type="modules" name="bottom" style="none" />
             </div>
 		</div>
-		<?php endif; ?>
-		<?php if ($rockettheme_logo=="true") : ?>
-		<a href="http://www.rockettheme.com"><span id="logo2"></span></a>
 		<?php endif; ?>
 		<jdoc:include type="modules" name="footer" style="afterburner" />
 		<jdoc:include type="modules" name="debug" style="none" />
