@@ -38,16 +38,16 @@ require(YOURBASEPATH . DS . "rt_utils.php");
 <div id="main">
 	<div id="wrapper" class="foreground">
 	    <div id="header">
-            <div id="logo">
-                <jdoc:include type="modules" name="logo" style="none" />
-            </div>
-
 
 <!--            <jdoc:include type="modules" name="top" style="afterburner" />-->
 <!--            <a href="--><?php //echo $this->baseurl ?><!--" id="logo1"></a>            -->
 
             <div id="nav">
                 <jdoc:include type="modules" name="nav" style="none" />
+            </div>
+
+            <div id="logo">
+                <jdoc:include type="modules" name="logo" style="none" />
             </div>
         </div>
 		<div id="message">
@@ -117,10 +117,10 @@ require(YOURBASEPATH . DS . "rt_utils.php");
 		<?php endif; ?>
 		<?php if ($this->countModules('bottom')) : ?>
 		<div id="footer">
-			<span class ="copyright">Copyright &copy; Resident</span>
             <div class="footer-pad">
                 <jdoc:include type="modules" name="bottom" style="none" />
             </div>
+            <span class ="copyright">Copyright &copy; Resident</span>
 		</div>
 		<?php endif; ?>
 		<jdoc:include type="modules" name="footer" style="afterburner" />
