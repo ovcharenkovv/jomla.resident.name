@@ -10,60 +10,28 @@ defined('_JEXEC') or die;
 
 $cparams = JComponentHelper::getParams ('com_media');
 ?>
-<div class="contact<?php echo $this->pageclass_sfx?>">
-<?php if ($this->params->get('show_page_heading', 1)) : ?>
+
 <h1>
 	<?php echo $this->escape($this->params->get('page_heading')); ?>
 </h1>
-<?php endif; ?>
-	<?php if ($this->contact->name && $this->params->get('show_name')) : ?>
-		<h2>
-			<span class="contact-name"><?php echo $this->contact->name; ?></span>
-		</h2>
-	<?php endif;  ?>
-	<?php if ($this->params->get('show_contact_category') == 'show_no_link') : ?>
-		<h3>
-			<span class="contact-category"><?php echo $this->contact->category_title; ?></span>
-		</h3>
-	<?php endif; ?>
-	<?php if ($this->params->get('show_contact_category') == 'show_with_link') : ?>
-		<?php $contactLink = ContactHelperRoute::getCategoryRoute($this->contact->catid);?>
-		<h3>
-			<span class="contact-category"><a href="<?php echo $contactLink; ?>">
-				<?php echo $this->escape($this->contact->category_title); ?></a>
-			</span>
-		</h3>
-	<?php endif; ?>
-	<?php if ($this->params->get('show_contact_list') && count($this->contacts) > 1) : ?>
-		<form action="#" method="get" name="selectForm" id="selectForm">
-			<?php echo JText::_('COM_CONTACT_SELECT_CONTACT'); ?>
-			<?php echo JHtml::_('select.genericlist',  $this->contacts, 'id', 'class="inputbox" onchange="document.location.href = this.value"', 'link', 'name', $this->contact->link);?>
-		</form>
-	<?php endif; ?>
-	<?php  if ($this->params->get('presentation_style')!='plain'){?>
-		<?php  echo  JHtml::_($this->params->get('presentation_style').'.start', 'contact-slider'); ?>
-	<?php  echo JHtml::_($this->params->get('presentation_style').'.panel', JText::_('COM_CONTACT_DETAILS'), 'basic-details'); } ?>
-	<?php if ($this->params->get('presentation_style')=='plain'):?>
-		<?php  echo '<h3>'. JText::_('COM_CONTACT_DETAILS').'</h3>';  ?>
-	<?php endif; ?>
-	<?php if ($this->contact->image && $this->params->get('show_image')) : ?>
-		<div class="contact-image">
-			<?php echo JHtml::_('image', $this->contact->image, JText::_('COM_CONTACT_IMAGE_DETAILS'), array('align' => 'middle')); ?>
-		</div>
-	<?php endif; ?>
 
-	<?php if ($this->contact->con_position && $this->params->get('show_position')) : ?>
-		<p class="contact-position"><?php echo $this->contact->con_position; ?></p>
-	<?php endif; ?>
+<div class= "contact">
 
-	<?php echo $this->loadTemplate('address'); ?>
+    <?php $skype = '<a target="_blank" href="skype:'.$this->contact->con_position.'?call">'.$this->contact->con_position.'</a>';?>
+    <?php $facebook = '<a target="_blank" href="https://www.facebook.com/profile.php?id=100001242006924">'.nl2br($this->contact->address).'</a>';?>
+    <h3>Skype - </h3><h3><?php echo $skype ?></h3>
+    <h3>Email - </h3><h3><?php echo $this->contact->email_to; ?></h3>
+    <h3>Facebook - </h3><h3><?php echo $facebook; ?> </h3>
 
-	<?php if ($this->params->get('allow_vcard')) :	?>
-		<?php echo JText::_('COM_CONTACT_DOWNLOAD_INFORMATION_AS');?>
-			<a href="<?php echo JRoute::_('index.php?option=com_contact&amp;view=contact&amp;id='.$this->contact->id . '&amp;format=vcf'); ?>">
-			<?php echo JText::_('COM_CONTACT_VCARD');?></a>
-	<?php endif; ?>
-	<p></p>
+
+
+
+
+    <p class="desc"><?php echo $this->contact->misc; ?></p>
+</div>
+
+
+
 	<?php if ($this->params->get('show_email_form') && ($this->contact->email_to || $this->contact->user_id)) : ?>
 
 		<?php if ($this->params->get('presentation_style')!='plain'):?>
@@ -95,21 +63,7 @@ $cparams = JComponentHelper::getParams ('com_media');
 		<?php endif; ?>
 		<?php echo $this->loadTemplate('profile'); ?>
 	<?php endif; ?>
-	<?php if ($this->contact->misc && $this->params->get('show_misc')) : ?>
-		<?php if ($this->params->get('presentation_style')!='plain'){?>
-			<?php echo JHtml::_($this->params->get('presentation_style').'.panel', JText::_('COM_CONTACT_OTHER_INFORMATION'), 'display-misc');} ?>
-		<?php if ($this->params->get('presentation_style')=='plain'):?>
-			<?php echo '<h3>'. JText::_('COM_CONTACT_OTHER_INFORMATION').'</h3>'; ?>
-		<?php endif; ?>
-				<div class="contact-miscinfo">
-					<div class="<?php echo $this->params->get('marker_class'); ?>">
-						<?php echo $this->params->get('marker_misc'); ?>
-					</div>
-					<div class="contact-misc">
-						<?php echo $this->contact->misc; ?>
-					</div>
-				</div>
-	<?php endif; ?>
+
 	<?php if ($this->params->get('presentation_style')!='plain'){?>
 			<?php echo JHtml::_($this->params->get('presentation_style').'.end');} ?>
 </div>

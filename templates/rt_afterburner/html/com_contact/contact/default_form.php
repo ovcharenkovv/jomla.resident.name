@@ -21,15 +21,24 @@ JHtml::_('behavior.tooltip');
 		<fieldset>
 			<legend><?php echo JText::_('COM_CONTACT_FORM_LABEL'); ?></legend>
 			<dl>
-				<dt><?php echo $this->form->getLabel('contact_name'); ?></dt>
-				<dd><?php echo $this->form->getInput('contact_name'); ?></dd>
-				<dt><?php echo $this->form->getLabel('contact_email'); ?></dt>
-				<dd><?php echo $this->form->getInput('contact_email'); ?></dd>
-				<dt><?php echo $this->form->getLabel('contact_subject'); ?></dt>
-				<dd><?php echo $this->form->getInput('contact_subject'); ?></dd>
-				<dt><?php echo $this->form->getLabel('contact_message'); ?></dt>
-				<dd><?php echo $this->form->getInput('contact_message'); ?></dd>
-				<?php 	if ($this->params->get('show_email_copy')){ ?>
+                <p>
+                    <?php echo $this->form->getLabel('contact_name'); ?><br>
+                    <?php echo $this->form->getInput('contact_name'); ?>
+                </p>
+                <p>
+                    <?php echo $this->form->getLabel('contact_email'); ?><br>
+                    <?php echo $this->form->getInput('contact_email'); ?>
+                </p>
+                <p>
+                    <?php echo $this->form->getLabel('contact_subject'); ?><br>
+                    <?php echo $this->form->getInput('contact_subject'); ?>
+                </p>
+                <p>
+                    <?php echo $this->form->getLabel('contact_message'); ?><br>
+                    <?php echo $this->form->getInput('contact_message'); ?>
+                </p>
+
+                <?php 	if ($this->params->get('show_email_copy')){ ?>
 						<dt><?php echo $this->form->getLabel('contact_email_copy'); ?></dt>
 						<dd><?php echo $this->form->getInput('contact_email_copy'); ?></dd>
 				<?php 	} ?>
