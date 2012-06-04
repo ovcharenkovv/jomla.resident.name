@@ -1,3 +1,4 @@
+administrator/components/com_akeeba/backup/akeeba.log
 .idea/*
 .gitignore
 administrator/cache/*
