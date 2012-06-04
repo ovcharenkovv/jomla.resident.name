@@ -323,3 +323,7 @@ table.skills ul li h3{
     margin: 0 0 25px;
     padding: 0 0 10px;
 }
+
+.m_portfolio_menu ul.menu li.current {
+    padding: 0 0 0 25px;
+}
