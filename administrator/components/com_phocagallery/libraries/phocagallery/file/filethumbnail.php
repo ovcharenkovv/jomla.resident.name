@@ -428,8 +428,8 @@ class PhocaGalleryFileThumbnail
 		$params 			= JComponentHelper::getParams('com_phocagallery') ;
 		$large_image_width 	= $params->get( 'large_image_width', 640 );
 		$large_image_height = $params->get( 'large_image_height', 480 );
-		$medium_image_width = $params->get( 'medium_image_width', 100 );
-		$medium_image_height= $params->get( 'medium_image_height', 100 );
+		$medium_image_width = $params->get( 'medium_image_width', 200 );
+		$medium_image_height= $params->get( 'medium_image_height', 120 );
 		$small_image_width 	= $params->get( 'small_image_width', 50 );
 		$small_image_height = $params->get( 'small_image_height', 50 );
 		
