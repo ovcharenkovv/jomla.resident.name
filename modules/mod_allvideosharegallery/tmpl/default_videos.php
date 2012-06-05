@@ -42,8 +42,8 @@ $document->addStyleSheet( JURI::root() . "components/com_allvideoshare/css/allvi
 		echo $clear;
   ?>
   <div class="avs_thumb" style="width:<?php echo $items['thumb_width']; ?>px;"> 
-  	<a href="<?php echo JRoute::_($link.$qs.'slg='.$videos[$i]->slug.'&orderby='.$items['orderby']); ?>"> 
-    	<img class="arrow" src="<?php echo JURI::root(); ?>components/com_allvideoshare/assets/play.gif" border="0" style="margin-left:<?php echo ($items['thumb_width'] / 2) - 15; ?>px; margin-top:<?php echo ($items['thumb_height'] / 2) - 13; ?>px;" /> 
+  	<a href="<?php echo JRoute::_($link.$qs.'slg='.$videos[$i]->slug.'&Itemid='.JRequest::getVar('Itemid').'&orderby='.$items['orderby']); ?>">
+    	<img class="arrow" src="<?php echo JURI::root(); ?>components/com_allvideoshare/assets/play.gif" border="0" style="margin-left:<?php echo ($items['thumb_width'] / 2) - 21; ?>px; margin-top:<?php echo ($items['thumb_height'] / 2) - 21; ?>px;" />
         <img class="image" src="<?php echo $videos[$i]->thumb; ?>" width="<?php echo $items['thumb_width']; ?>" height="<?php echo $items['thumb_height']; ?>" title="<?php echo JText::_('CLICK_TO_VIEW') . ' : ' . $videos[$i]->title; ?>" border="0" /> 
         <span class="title"><?php echo $videos[$i]->title; ?></span> 
         <span class="views"><strong>views : </strong><?php echo $videos[$i]->views; ?></span> 

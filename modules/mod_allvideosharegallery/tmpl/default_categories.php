@@ -39,11 +39,11 @@ $document->addStyleSheet( JURI::root() . "components/com_allvideoshare/css/allvi
 		echo $clear;
   ?>
   <div class="avs_thumb" style="width:<?php echo $items['thumb_width']; ?>px;"> 
-  	<a href="<?php echo JRoute::_($link.'&slg='.$categories[$i]->slug); ?>"> 
-    	<img class="arrow" src="<?php echo JURI::root(); ?>components/com_allvideoshare/assets/play.gif" border="0" style="margin-left:<?php echo ($items['thumb_width'] / 2) - 15; ?>px; margin-top:<?php echo ($items['thumb_height'] / 2) - 13; ?>px;" /> 
+  	<a href="<?php echo JRoute::_($link.'&slg='.$categories[$i]->slug); ?>">
+    	<img class="arrow" src="<?php echo JURI::root(); ?>components/com_allvideoshare/assets/play.gif" border="0" style="margin-left:<?php echo ($items['thumb_width'] / 2) - 21; ?>px; margin-top:<?php echo ($items['thumb_height'] / 2) - 21; ?>px;" />
         <img class="image" src="<?php echo $categories[$i]->thumb; ?>" width="<?php echo $items['thumb_width']; ?>" height="<?php echo $items['thumb_height']; ?>" title="<?php echo JText::_('CLICK_TO_VIEW') . ' : ' . $categories[$i]->name; ?>" border="0" /> 
         <span class="name"><?php echo $categories[$i]->name; ?></span> 
-    </a> 
+    </a>
   </div>
   <?php } ?>
   <div style="clear:both"></div>

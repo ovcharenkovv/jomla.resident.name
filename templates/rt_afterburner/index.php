@@ -115,6 +115,13 @@ require(YOURBASEPATH . DS . "rt_utils.php");
 			<jdoc:include type="modules" name="user9" style="afterburner" />
 		</div>
 		<?php endif; ?>
+
+        <?php if ($this->countModules('portfolio')) : ?>
+        <div id="portfolio">
+            <jdoc:include type="modules" name="portfolio" style="none" />
+        </div>
+        <?php endif; ?>
+
 		<?php if ($this->countModules('bottom')) : ?>
 		<div id="footer">
             <div class="footer-pad">

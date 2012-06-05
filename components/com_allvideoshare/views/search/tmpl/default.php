@@ -25,20 +25,20 @@ $document->addStyleSheet( JRoute::_("index.php?option=com_allvideoshare&view=css
 	<h2> <?php echo $this->escape($this->params->get($header)); ?> </h2>
 <?php endif; ?>
 <div id="avs_gallery<?php echo $this->escape($this->params->get('pageclass_sfx')); ?>">
-  <?php 
+  <?php
   	if(!count($search)) echo JText::_('ITEM_NOT_FOUND');
-  	for ($i=0, $n=count($search); $i < $n; $i++) { 
-		$clear = '';  
+  	for ($i=0, $n=count($search); $i < $n; $i++) {
+		$clear = '';
   		if($column >= $config[0]->cols) {
 			$clear  = '<div style="clear:both;"></div>';
 			$column = 0;
-			$row++;		
+			$row++;
 		}
 		$column++;
 		echo $clear;
   ?>
   <div class="avs_thumb" style="width:<?php echo $config[0]->thumb_width; ?>px;">
-  	<a href="<?php echo JRoute::_($link.$search[$i]->slug.$qs); ?>"> 
+  	<a href="<?php echo JRoute::_($link.$search[$i]->slug.$qs); ?>">
     	<img class="arrow" src="<?php echo JURI::root(); ?>components/com_allvideoshare/assets/play.gif" border="0" style="margin-left:<?php echo ($config[0]->thumb_width / 2) - 15; ?>px; margin-top:<?php echo ($config[0]->thumb_height / 2) - 13; ?>px;" />
         <img class="image" src="<?php echo $search[$i]->thumb; ?>" width="<?php echo $config[0]->thumb_width; ?>" height="<?php echo $config[0]->thumb_height; ?>" title="<?php echo JText::_('CLICK_TO_VIEW').' : '.$search[$i]->title; ?>" border="0" />
         <span class="title"><?php echo $search[$i]->title; ?></span>

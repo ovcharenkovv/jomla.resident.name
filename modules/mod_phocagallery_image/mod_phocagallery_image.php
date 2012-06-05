@@ -9,6 +9,7 @@
  * test utf-8 ä,ü,ö
  */
 defined('_JEXEC') or die('Restricted access');// no direct access
+if (JRequest::getVar('option')=='com_allvideoshare'&&JRequest::getVar('view')=='video') return false;
 if (!JComponentHelper::isEnabled('com_phocagallery', true)) {
 	return JError::raiseError(JText::_('Phoca Gallery Error'), JText::_('Phoca Gallery is not installed on your system'));
 }

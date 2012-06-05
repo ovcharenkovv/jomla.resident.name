@@ -21,7 +21,7 @@ h3 {      color: #C9C9C9;
 h4 {font-size:110%;}
 a {color:#555;text-decoration:none;font-weight:bold;}
 a:hover {text-decoration:underline;}
-ul {}
+ul {margin: 0 0 20px 0;}
 p {margin-top:10px;margin-bottom:10px;}
 #main {font-size:1.3em;line-height:140%; border-top: 4px solid #585858;}
 .background {position:absolute;width:100%;height:130px;background:url(../images/light.png) 0 -384px repeat-x;}
@@ -113,6 +113,8 @@ div.breadcrumbs .sep {padding:0 5px;}
 #modlgn_username, #modlgn_passwd {border:1px solid #ccc;padding:3px;}
 .pagination span, .pagination a {margin-right:5px;}
 #colmask ul li {list-style:none;}
+.item-page ul.caption li {list-style: disc outside none !important;}
+.item-page ul.caption {     margin: 0 0 20px 15px!important; }
 #colmask ul li.current a {color: #585858; font-weight: bold;}
 #colmask ul ul {margin:0 0 0 25px;}
 #colmask ul ul li {list-style:none; }
@@ -326,4 +328,25 @@ table.skills ul li h3{
 
 .m_portfolio_menu ul.menu li.current {
     padding: 0 0 0 25px;
+}
+
+.avs_thumb .title { display: none !important;}
+.avs_thumb .views { display: none !important;}
+div.avs_thumb .arrow {
+    position:absolute;
+    width:43px!important;
+    height:43px!important;
+    margin-left:59px;
+    margin-top:28px;
+    opacity:0.5;
+}
+
+#portfolio {
+    display: block;
+    left: 1010px;
+    position: absolute;
+    top: 0;
+}
+#portfolio:hover {
+    opacity: 0.85;
 }

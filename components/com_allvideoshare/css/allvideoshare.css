@@ -18,12 +18,13 @@ div.avs_thumb .image {
 }
 div.avs_thumb .arrow {
 	position:absolute;
-	width:29px;
-	height:26px;
+	width:43px!important;
+	height:43px!important;
 	margin-left:59px;
 	margin-top:28px;
 	opacity:0.5;
 }
+
 div.avs_thumb .name, div.avs_thumb .title {
 	margin:5px 0px 0px 0px;
 	padding:0px;

@@ -27,25 +27,25 @@ $document->addStyleSheet( JRoute::_("index.php?option=com_allvideoshare&view=css
 	<h2> <?php echo $this->escape($this->params->get($header)); ?> </h2>
 <?php endif; ?>
 <div id="avs_gallery<?php echo $this->escape($this->params->get('pageclass_sfx')); ?>">
-  <?php 
+  <?php
   	if(!count($videos)) echo JText::_('ITEM_NOT_FOUND');
-  	for ($i=0, $n=count($videos); $i < $n; $i++) {   
-		$clear = ''; 
+  	for ($i=0, $n=count($videos); $i < $n; $i++) {
+		$clear = '';
     	if($column >= $config[0]->cols) {
 			$clear  = '<div style="clear:both;"></div>';
 			$column = 0;
-			$row++;		
+			$row++;
 		}
 		$column++;
 		echo $clear;
   ?>
-  <div class="avs_thumb" style="width:<?php echo $config[0]->thumb_width; ?>px;"> 
-  	<a href="<?php echo JRoute::_($link.$videos[$i]->slug.$qs); ?>"> 
-    	<img class="arrow" src="<?php echo JURI::root(); ?>components/com_allvideoshare/assets/play.gif" border="0" style="margin-left:<?php echo ($config[0]->thumb_width / 2) - 15; ?>px; margin-top:<?php echo ($config[0]->thumb_height / 2) - 13; ?>px;" /> 
-        <img class="image" src="<?php echo $videos[$i]->thumb; ?>" width="<?php echo $config[0]->thumb_width; ?>" height="<?php echo $config[0]->thumb_height; ?>" title="<?php echo JText::_('CLICK_TO_VIEW').' : '.$videos[$i]->title; ?>" border="0" /> 
-        <span class="title"><?php echo $videos[$i]->title; ?></span> 
-        <span class="views"><strong>views : </strong><?php echo $videos[$i]->views; ?></span> 
-    </a> 
+  <div class="avs_thumb" style="width:<?php echo $config[0]->thumb_width; ?>px;">
+  	<a href="<?php echo JRoute::_($link.$videos[$i]->slug.$qs); ?>">
+    	<img class="arrow" src="<?php echo JURI::root(); ?>components/com_allvideoshare/assets/play.gif" border="0" style="margin-left:<?php echo ($config[0]->thumb_width / 2) - 15; ?>px; margin-top:<?php echo ($config[0]->thumb_height / 2) - 13; ?>px;" />
+        <img class="image" src="<?php echo $videos[$i]->thumb; ?>" width="<?php echo $config[0]->thumb_width; ?>" height="<?php echo $config[0]->thumb_height; ?>" title="<?php echo JText::_('CLICK_TO_VIEW').' : '.$videos[$i]->title; ?>" border="0" />
+        <span class="title"><?php echo $videos[$i]->title; ?></span>
+        <span class="views"><strong>views : </strong><?php echo $videos[$i]->views; ?></span>
+    </a>
   </div>
   <?php } ?>
   <div style="clear:both"></div>
