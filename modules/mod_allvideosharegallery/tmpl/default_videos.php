@@ -28,6 +28,31 @@ $document->addStyleSheet( JURI::root() . "components/com_allvideoshare/css/allvi
 
 ?>
 
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+<script>
+    !window.jQuery && document.write('<script src="jquery-1.4.3.min.js"><\/script>');
+</script>
+<script type="text/javascript" src="media/fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
+<script type="text/javascript" src="media/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+<link rel="stylesheet" type="text/css" href="media/fancybox/jquery.fancybox-1.3.4.css" media="screen" />
+<script type="text/javascript">
+    $(document).ready(function() {
+        $(".iframe").fancybox({
+            'width'				: '7',
+            'height'			: '5',
+            'autoScale'			: false,
+            'transitionIn'		: 'none',
+            'transitionOut'		: 'none',
+            'type'				: 'iframe'
+        });
+
+    });
+</script>
+
+
+
+
+
 <div id="avs_gallery<?php echo $moduleclass_sfx; ?>" class="avs_gallery<?php echo $moduleclass_sfx; ?>">
   <?php 
   	if(!count($videos)) echo JText::_('ITEM_NOT_FOUND');
@@ -41,13 +66,13 @@ $document->addStyleSheet( JURI::root() . "components/com_allvideoshare/css/allvi
 		$column++;
 		echo $clear;
   ?>
-  <div class="avs_thumb" style="width:<?php echo $items['thumb_width']; ?>px;"> 
-  	<a href="<?php echo JRoute::_($link.$qs.'slg='.$videos[$i]->slug.'&Itemid='.JRequest::getVar('Itemid').'&orderby='.$items['orderby']); ?>">
+  <div class="avs_thumb" style="width:<?php echo $items['thumb_width']; ?>px;">
+      <a class="iframe" href="<?php echo JRoute::_($link.$qs.'slg='.$videos[$i]->slug.'&tmpl=component'.'&orderby='.$items['orderby']); ?>">
     	<img class="arrow" src="<?php echo JURI::root(); ?>components/com_allvideoshare/assets/play.gif" border="0" style="margin-left:<?php echo ($items['thumb_width'] / 2) - 21; ?>px; margin-top:<?php echo ($items['thumb_height'] / 2) - 21; ?>px;" />
-        <img class="image" src="<?php echo $videos[$i]->thumb; ?>" width="<?php echo $items['thumb_width']; ?>" height="<?php echo $items['thumb_height']; ?>" title="<?php echo JText::_('CLICK_TO_VIEW') . ' : ' . $videos[$i]->title; ?>" border="0" /> 
-        <span class="title"><?php echo $videos[$i]->title; ?></span> 
-        <span class="views"><strong>views : </strong><?php echo $videos[$i]->views; ?></span> 
-    </a> 
+        <img class="image" src="<?php echo $videos[$i]->thumb; ?>" width="<?php echo $items['thumb_width']; ?>" height="<?php echo $items['thumb_height']; ?>" title="<?php echo JText::_('CLICK_TO_VIEW') . ' : ' . $videos[$i]->title; ?>" border="0" />
+        <span class="title"><?php echo $videos[$i]->title; ?></span>
+        <span class="views"><strong>views : </strong><?php echo $videos[$i]->views; ?></span>
+    </a>
   </div>
   <?php } ?>
   <div style="clear:both"></div>

@@ -1,10 +1,22 @@
+@font-face {
+    font-family: 'NimbusSansNovusTBold';
+    src: url('../images/nimbussansnovust_bold-webfont.eot');
+    src: url('../images/nimbussansnovust_bold-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../images/nimbussansnovust_bold-webfont.woff') format('woff'),
+    url('../images/nimbussansnovust_bold-webfont.ttf') format('truetype'),
+    url('../images/nimbussansnovust_bold-webfont.svg#NimbusSansNovusTBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
 html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,font,img,ins,kbd,q,s,samp,small,strike,sub,sup,tt,var,center,dl,dt,dd,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td {background:transparent;border:0;font-family:inherit;font-size:100%;font-style:inherit;font-weight:inherit;margin:0;padding:0;outline:0;vertical-align:baseline;}
 table {border-collapse:collapse;border-spacing:0;}
 
 /* Main Layout */
 html {height:100%;margin-bottom:1px;}
 body {font:62.5%/1.2 Helvetica, Arial, sans-serif;color:#585858;}
-h1,h2,h3,h4,.componentheading{font-weight:bold;margin:0 0 1em;}
+
+h1,h2,h3,h4,.componentheading{font-weight:bold;margin:0 0 1em; font-family: NimbusSansNovusTBold,helvetica,verdana}
 h1,.componentheading {font-size:180%;}
 #col1 h1 {       border-bottom: 1px solid #D5D5D5;
     color: #D5D5D5;
@@ -69,7 +81,7 @@ p {margin-top:10px;margin-bottom:10px;}
 #nav { display: block;border-top: 4px solid;display: block; float: right; width: 769px;}
 #nav ul {margin:0 0 0 0;}
 #nav li {list-style:none;float:left;padding-left:0;height:34px;position:relative;}
-#nav li a {display:block;padding:0 50px;line-height:30px;color:#575757;font-weight:bold;}
+#nav li a {display:block;padding:0 40px;line-height:30px;color:#575757;font-weight:bold;}
 #nav li.active a {background:#575757;color:#fff;}
 #nav li a:hover, #nav li:hover a, #nav li.sfHover a {background:#575757;color:#fff;text-decoration:none;}
 #nav li ul {position:absolute;width:170px;left:-999em;margin-left:-1px;border:1px solid #006B9F;border-top:0;}
@@ -194,7 +206,9 @@ span.attention {display:block;margin:15px 0;padding:8px 10px 8px 10px;background
 #footer .footer-pad {display: block; float: right; width: 769px;}
 #footer .footer-pad ul {margin: 0}
 #footer .footer-pad ul li a {color: #9f9f9f; font-weight: normal;}
-#footer .footer-pad ul li {display: inline-block; margin: 0 50px;}
+#footer .footer-pad ul li {display: inline-block; margin: 0 40px;}
+#footer .footer-pad ul li:first-child {margin: 0 80px 0 0;}
+#footer .footer-pad ul li:last-child {margin: 0 0 0 80px;}
 #footer .footer-pad ul li a:hover {color: #575757; text-decoration: none;}
 #footer .footer-pad ul li.current a {color:#575757 ;font-weight: bold;}
 .m_portfolio_menu ul li ul { display: none; }
@@ -343,7 +357,7 @@ div.avs_thumb .arrow {
 
 #portfolio {
     display: block;
-    left: 1010px;
+    left: 1100px;
     position: absolute;
     top: 0;
 }
